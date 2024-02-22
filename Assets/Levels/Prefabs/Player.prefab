@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7439335395271101991}
   - component: {fileID: 3681739667680931885}
   - component: {fileID: 2198717778425540906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   jumpForce: 12
+  _isGrounded: 0
   graundCheckPoint: {fileID: 4736361696218561634}
   whatIsGraund:
     serializedVersion: 2
@@ -163,11 +164,11 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10566009, y: 0.03740153}
-  m_Size: {x: 1.1714679, y: 3.2147732}
+  m_Offset: {x: 0.21109651, y: -0.15720773}
+  m_Size: {x: 1.770749, y: 3.3334568}
   m_Direction: 0
 --- !u!95 &2198717778425540906
 Animator:
@@ -199,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4736361696218561634}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +216,7 @@ Transform:
   m_GameObject: {fileID: 7087615181876696906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

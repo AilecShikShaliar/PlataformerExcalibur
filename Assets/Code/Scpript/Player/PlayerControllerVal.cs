@@ -10,7 +10,7 @@ public class PlayerControllerVal : MonoBehaviour
     public float jumpForce;
 
     //Jugador está en el suelo
-    private bool _isGrounded;
+    public bool _isGrounded;
     //Detectar suelo
     public Transform graundCheckPoint;
     //Referencia a las Layer del suelo
@@ -75,24 +75,27 @@ public class PlayerControllerVal : MonoBehaviour
                             _canDubleJump = false;
                         }
                     }
+            Debug.Log("saltacoño");
 
                 }
 
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
-
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (collision.gameObject.tag == "ground")
-            {
-                _isGrounded = true;
-            }
-            else _isGrounded = false;
-        }
+        
 
 
         _anim.SetBool("isGrounded", _isGrounded);
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Entra");
+
+        if (collision.gameObject.tag == "ground")
+        {
+            _isGrounded = true;
+        }
+        else _isGrounded = false;
+    }
 
 
 }
