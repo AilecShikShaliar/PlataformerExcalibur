@@ -9,7 +9,7 @@ public class PlayerControllerVal : MonoBehaviour
     //Salto
     public float jumpForce;
 
-    //Jugador está en el suelo
+    //Jugador estï¿½ en el suelo
     public bool _isGrounded;
     //Detectar suelo
     public Transform graundCheckPoint;
@@ -58,7 +58,7 @@ public class PlayerControllerVal : MonoBehaviour
              //BOTON DE SALTO
              if (Input.GetButtonDown("Jump"))
                 { 
-                    //si el jugador esté en el suelo
+                    //si el jugador estï¿½ en el suelo
                     if (_isGrounded)
                     {
                         _theRB.velocity = new Vector2(_theRB.velocity.x, jumpForce);
