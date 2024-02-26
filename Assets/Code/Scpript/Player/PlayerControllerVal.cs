@@ -75,11 +75,10 @@ public class PlayerControllerVal : MonoBehaviour
                             _canDubleJump = false;
                         }
                     }
-            Debug.Log("saltacoño");
 
                 }
 
-        Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
+       Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
         
 
 
@@ -88,11 +87,12 @@ public class PlayerControllerVal : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Entra");
+       
 
         if (collision.gameObject.tag == "ground")
         {
             _isGrounded = true;
+            
         }
         else _isGrounded = false;
     }

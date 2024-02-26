@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealthController : MonoBehaviour
+   
 {
+    [HideInInspector] public int currentHealth;
+
+
     // Start is called before the first frame update
     void Start()
     {

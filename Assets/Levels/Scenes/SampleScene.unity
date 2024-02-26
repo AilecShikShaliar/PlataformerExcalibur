@@ -1905,9 +1905,9 @@ GameObject:
   - component: {fileID: 2093516182}
   - component: {fileID: 2093516181}
   - component: {fileID: 2093516183}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Suelo
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,6 +2439,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
+    - target: {fileID: 2198717778425540906, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681739667680931885, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Size.x
       value: 2.0405328
@@ -2456,6 +2460,14 @@ PrefabInstance:
       value: -0.10096907
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: _canDubleJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: whatIsGraund.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -2464,8 +2476,20 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_BodyType
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalPosition.x
