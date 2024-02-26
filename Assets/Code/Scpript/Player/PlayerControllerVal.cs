@@ -44,7 +44,7 @@ public class PlayerControllerVal : MonoBehaviour
 
         _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
 
-        //_isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
+        _isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
 
         if(Input.GetAxisRaw("Horizontal") !=0f)
         {

@@ -1905,7 +1905,7 @@ GameObject:
   - component: {fileID: 2093516182}
   - component: {fileID: 2093516181}
   - component: {fileID: 2093516183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Suelo
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2439,57 +2439,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
-    - target: {fileID: 2198717778425540906, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3681739667680931885, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_Size.x
-      value: 2.0405328
-      objectReference: {fileID: 0}
-    - target: {fileID: 3681739667680931885, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_Size.y
-      value: 3.4579737
-      objectReference: {fileID: 0}
-    - target: {fileID: 3681739667680931885, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.13489191
-      objectReference: {fileID: 0}
-    - target: {fileID: 3681739667680931885, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.10096907
-      objectReference: {fileID: 0}
-    - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: moveSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: _canDubleJump
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: whatIsGraund.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_GravityScale
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2530,6 +2482,14 @@ PrefabInstance:
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146697637765528515, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_Size.x
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146697637765528515, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_Size.y
+      value: 3.71
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

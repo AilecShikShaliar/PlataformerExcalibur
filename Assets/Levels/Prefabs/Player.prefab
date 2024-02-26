@@ -101,13 +101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f80df78c4e8d74cb58ab815ef76250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 5
   jumpForce: 12
   _isGrounded: 0
   graundCheckPoint: {fileID: 4736361696218561634}
   whatIsGraund:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 64
 --- !u!50 &7439335395271101991
 Rigidbody2D:
   serializedVersion: 4
@@ -116,14 +116,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6754894019366281501}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -167,8 +167,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21109651, y: -0.15720773}
-  m_Size: {x: 1.770749, y: 3.3334568}
+  m_Offset: {x: 0.13489191, y: -0.10096907}
+  m_Size: {x: 2.0405328, y: 3.4579737}
   m_Direction: 0
 --- !u!95 &2198717778425540906
 Animator:
@@ -183,7 +183,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 65c7a354c5e5d1444b2401d549b8cbc3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
