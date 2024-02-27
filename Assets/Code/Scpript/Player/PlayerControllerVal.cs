@@ -8,6 +8,8 @@ public class PlayerControllerVal : MonoBehaviour
     public float moveSpeed;
     //Salto
     public float jumpForce;
+    //Velocidad Correr
+    public float runMode;
 
     //Jugador est� en el suelo
     public bool _isGrounded;
@@ -17,6 +19,9 @@ public class PlayerControllerVal : MonoBehaviour
     public LayerMask whatIsGraund;
     //Doble salto
     private bool _canDubleJump;
+    //correr
+    public bool canRun;
+
 
     //RB del jugador
     private Rigidbody2D _theRB;
@@ -40,19 +45,27 @@ public class PlayerControllerVal : MonoBehaviour
     
     void Update()
     {
-        //input = Input.GetAxisRaw("Horizontal");
+        //BOTÓN DE CORRER
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
 
-        _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
+        }
+        else _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
 
         _isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
 
         if(Input.GetAxisRaw("Horizontal") !=0f)
         {
             _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+
+            canRun = true;
         }
         else
         {
             _anim.SetFloat("moveSpeed", 0f);
+
+            canRun = false;
         }
 
              //BOTON DE SALTO
@@ -77,8 +90,9 @@ public class PlayerControllerVal : MonoBehaviour
                     }
 
                 }
+        
 
-       Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
+        Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
         
 
 
