@@ -20,7 +20,7 @@ public class PlayerControllerVal : MonoBehaviour
     //Doble salto
     private bool _canDubleJump;
     //correr
-    public bool canRun;
+    public bool canMove;
 
 
     //RB del jugador
@@ -46,26 +46,33 @@ public class PlayerControllerVal : MonoBehaviour
     void Update()
     {
         //BOTÓN DE CORRER
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
-
-        }
-        else _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
-
+       
         _isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
 
         if(Input.GetAxisRaw("Horizontal") !=0f)
         {
-            _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+           
 
-            canRun = true;
+            canMove = true;
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
+                _anim.SetBool("moveSpeed", true);
+            }
+            else
+            {
+                _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
+                _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                _anim.SetBool("moveSpeed", false);
+
+            }
         }
         else
         {
             _anim.SetFloat("moveSpeed", 0f);
 
-            canRun = false;
+            canMove = false;
         }
 
              //BOTON DE SALTO
