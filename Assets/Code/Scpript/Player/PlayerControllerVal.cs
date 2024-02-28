@@ -59,12 +59,14 @@ public class PlayerControllerVal : MonoBehaviour
             {
                 _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
                 _anim.SetBool("moveSpeed", true);
+                _anim.SetBool("canMove", true);
             }
             else
             {
                 _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
                 _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
                 _anim.SetBool("moveSpeed", false);
+                _anim.SetBool("canMove", false);
 
             }
         }
