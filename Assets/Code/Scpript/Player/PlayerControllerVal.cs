@@ -62,7 +62,7 @@ public class PlayerControllerVal : MonoBehaviour
                 
                 _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
                 _anim.SetBool("canMove", true);
-                runMode = 4f;
+                runMode = 2f;
             }
             else
             {
