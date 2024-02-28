@@ -29,6 +29,7 @@ public class PlayerControllerVal : MonoBehaviour
     private Animator _anim;
     //Referencia al SpriteRenderer
     private SpriteRenderer _theSR;
+    public float actualSpeed;
     
     void Start()
     {
@@ -54,29 +55,30 @@ public class PlayerControllerVal : MonoBehaviour
            
 
             canMove = true;
-
+            _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
+        
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
-                _anim.SetBool("moveSpeed", true);
+                
+                _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
                 _anim.SetBool("canMove", true);
+                runMode = 4f;
             }
             else
             {
-                _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, _theRB.velocity.y);
+                runMode = 1f;
                 _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
-                _anim.SetBool("moveSpeed", false);
                 _anim.SetBool("canMove", false);
-
+                
             }
         }
         else
         {
             _anim.SetFloat("moveSpeed", 0f);
-
+            _anim.SetBool("canMove", false);
             canMove = false;
         }
-
+        actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
              //BOTON DE SALTO
              if (Input.GetButtonDown("Jump"))
                 { 

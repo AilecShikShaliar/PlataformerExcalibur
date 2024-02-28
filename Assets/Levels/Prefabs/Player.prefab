@@ -101,13 +101,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f80df78c4e8d74cb58ab815ef76250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   jumpForce: 12
+  runMode: 5
   _isGrounded: 0
   graundCheckPoint: {fileID: 4736361696218561634}
   whatIsGraund:
     serializedVersion: 2
     m_Bits: 64
+  canMove: 0
+  actualSpeed: 0
 --- !u!50 &7439335395271101991
 Rigidbody2D:
   serializedVersion: 4
@@ -124,7 +127,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ddcac5c5fba7eec47a7fd7a3ec6a19d7, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

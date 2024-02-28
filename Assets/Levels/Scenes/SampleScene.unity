@@ -3141,7 +3141,7 @@ Transform:
   m_GameObject: {fileID: 1635683073}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: 4.4185, z: 0}
+  m_LocalPosition: {x: -0.43, y: 2.33, z: 0}
   m_LocalScale: {x: 2.131006, y: 1.4343171, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4627,20 +4627,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: canRun
-      value: 1
+      propertyPath: runMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
-      propertyPath: runMode
-      value: 5
+      propertyPath: jumpForce
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7439335395271101991, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: m_GravityScale
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalPosition.x
