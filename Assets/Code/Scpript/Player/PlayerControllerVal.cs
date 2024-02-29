@@ -21,8 +21,17 @@ public class PlayerControllerVal : MonoBehaviour
     //Doble salto
     private bool _canDubleJump;
     //correr
-    private bool _canMove;
+    private bool _canRun;
+    //Fuerza de rebote del jugador
+    public float bounceForce;
 
+    private bool _canMove = true;
+
+    //EjeXY
+    public bool isLookingRight;
+
+    //DashForce
+    public float dashForce;
 
     //RB del jugador
     private Rigidbody2D _theRB;
@@ -45,6 +54,8 @@ public class PlayerControllerVal : MonoBehaviour
 
         //SpriteRendered del jugador
         _theSR = GetComponent<SpriteRenderer>();
+
+        isLookingRight = true;
     }
 
    
@@ -52,13 +63,21 @@ public class PlayerControllerVal : MonoBehaviour
     {
         //BOTÓN DE CORRER
        
+
         _isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
 
-        if(Input.GetAxisRaw("Horizontal") !=0f)
-        {
-           
+        if(_theRB.velocity.x != 0 || _theRB.velocity.y != 0)
+         Dash();
+        
+        if (Input.GetAxisRaw("Horizontal") > 0.1f) isLookingRight = true;
+        else if (Input.GetAxisRaw("Horizontal") < -0.1f) isLookingRight = false;
+        
 
-            _canMove = true;
+        if (Input.GetAxisRaw("Horizontal") !=0f && _canMove)
+        {
+
+            
+            _canRun = true;
             _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
         
             if (Input.GetKey(KeyCode.LeftShift))
@@ -80,7 +99,7 @@ public class PlayerControllerVal : MonoBehaviour
         {
             _anim.SetFloat("moveSpeed", 0f);
             _anim.SetBool("canMove", false);
-            _canMove = false;
+            _canRun = false;
         }
         actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
              //BOTON DE SALTO
@@ -127,6 +146,31 @@ public class PlayerControllerVal : MonoBehaviour
         }
         else _isGrounded = false;
     }
+
+    public void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            StartCoroutine(DashCo());
+            
+
+        }
+
+    }
+
+    private IEnumerator DashCo()
+    {
+        _canMove = false;
+        int n;
+        if (isLookingRight) n = 1; else n = -1;
+        _theRB.velocity = new Vector2(dashForce * n, _theRB.velocity.y);
+
+        Debug.Log("Avanzacojones");
+        yield return new WaitForSeconds(.5f);
+
+        _canMove = true;
+    }
+
     #endregion
 
 }
