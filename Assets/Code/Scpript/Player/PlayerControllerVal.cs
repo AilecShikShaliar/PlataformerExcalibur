@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControllerVal : MonoBehaviour
 {
+    #region VARIABLE Y REFERENCIAS
     //Velocidad
     public float moveSpeed;
     //Salto
@@ -12,7 +13,7 @@ public class PlayerControllerVal : MonoBehaviour
     public float runMode;
 
     //Jugador est� en el suelo
-    public bool _isGrounded;
+    private bool _isGrounded;
     //Detectar suelo
     public Transform graundCheckPoint;
     //Referencia a las Layer del suelo
@@ -20,7 +21,7 @@ public class PlayerControllerVal : MonoBehaviour
     //Doble salto
     private bool _canDubleJump;
     //correr
-    public bool canMove;
+    private bool _canMove;
 
 
     //RB del jugador
@@ -29,8 +30,11 @@ public class PlayerControllerVal : MonoBehaviour
     private Animator _anim;
     //Referencia al SpriteRenderer
     private SpriteRenderer _theSR;
+    //Velocidad al correr
     public float actualSpeed;
-    
+    #endregion
+
+    #region UNITY METHODS
     void Start()
     {
         //RB del jugador
@@ -43,7 +47,7 @@ public class PlayerControllerVal : MonoBehaviour
         _theSR = GetComponent<SpriteRenderer>();
     }
 
-    
+   
     void Update()
     {
         //BOTÓN DE CORRER
@@ -54,7 +58,7 @@ public class PlayerControllerVal : MonoBehaviour
         {
            
 
-            canMove = true;
+            _canMove = true;
             _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, _theRB.velocity.y);
         
             if (Input.GetKey(KeyCode.LeftShift))
@@ -76,7 +80,7 @@ public class PlayerControllerVal : MonoBehaviour
         {
             _anim.SetFloat("moveSpeed", 0f);
             _anim.SetBool("canMove", false);
-            canMove = false;
+            _canMove = false;
         }
         actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
              //BOTON DE SALTO
@@ -109,7 +113,9 @@ public class PlayerControllerVal : MonoBehaviour
 
         _anim.SetBool("isGrounded", _isGrounded);
     }
+    #endregion
 
+    #region MY METHODS
     void OnCollisionEnter2D(Collision2D collision)
     {
        
@@ -121,6 +127,6 @@ public class PlayerControllerVal : MonoBehaviour
         }
         else _isGrounded = false;
     }
-
+    #endregion
 
 }
