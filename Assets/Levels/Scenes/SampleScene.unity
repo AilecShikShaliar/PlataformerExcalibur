@@ -4551,7 +4551,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: dashForce
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: jumpForce

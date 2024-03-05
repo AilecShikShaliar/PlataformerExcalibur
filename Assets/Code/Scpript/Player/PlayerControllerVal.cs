@@ -27,6 +27,8 @@ public class PlayerControllerVal : MonoBehaviour
 
     private bool _canMove = true;
 
+    private bool _dashMove;
+
     //EjeXY
     public bool isLookingRight;
 
@@ -151,9 +153,10 @@ public class PlayerControllerVal : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(DashCo());
             
+            StartCoroutine(DashCo());
 
+            _anim.SetTrigger("dashTrigger");
         }
 
     }
@@ -161,14 +164,16 @@ public class PlayerControllerVal : MonoBehaviour
     private IEnumerator DashCo()
     {
         _canMove = false;
+        _dashMove = true;
         int n;
         if (isLookingRight) n = 1; else n = -1;
         _theRB.velocity = new Vector2(dashForce * n, _theRB.velocity.y);
 
-        Debug.Log("Avanzacojones");
+       
         yield return new WaitForSeconds(.5f);
 
         _canMove = true;
+        _dashMove = false;
     }
 
     #endregion
