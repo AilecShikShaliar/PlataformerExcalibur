@@ -4551,11 +4551,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: dashForce
-      value: 60
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: jumpForce
-      value: 26
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: moveSpeed
@@ -4563,7 +4563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: bounceForce
-      value: 26
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name

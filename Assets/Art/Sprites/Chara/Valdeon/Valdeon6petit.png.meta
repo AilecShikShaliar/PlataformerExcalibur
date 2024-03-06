@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ab6e0f3cbf2e624ca6d44216ae5b9b9
+guid: b5a2106e53212f1449cedf58eed38919
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Valdeon5petit_0
+      name: Valdeon6petit_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 520
-        width: 366
-        height: 403
+        x: 21
+        y: 457
+        width: 341
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c65df66d10a3944eb1c838d13545ced
-      internalID: -1390599856
+      spriteID: d88c096e9bd5e9a4b8fc2c13e571196a
+      internalID: -1220413887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valdeon5petit_1
+      name: Valdeon6petit_1
       rect:
         serializedVersion: 2
-        x: 463
-        y: 519
-        width: 356
-        height: 405
+        x: 446
+        y: 457
+        width: 313
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fcd81b0cdc568546a4215fb747a86c1
-      internalID: 1559125921
+      spriteID: 270de37a762b01248afd398864efc9e6
+      internalID: -1030279253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valdeon5petit_2
+      name: Valdeon6petit_2
       rect:
         serializedVersion: 2
-        x: 925
-        y: 520
-        width: 370
-        height: 404
+        x: 855
+        y: 457
+        width: 342
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6099c37250528c54eaa7e379084b924d
-      internalID: -913795731
+      spriteID: 6d81ea171ddbc444aa3771a01f93effa
+      internalID: -127179100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valdeon5petit_3
+      name: Valdeon6petit_3
       rect:
         serializedVersion: 2
-        x: 1390
-        y: 517
-        width: 389
-        height: 408
+        x: 1281
+        y: 457
+        width: 312
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84667e1035524034794c28f54726f6fc
-      internalID: 1956097020
+      spriteID: 95fc551a14c9c6047b6f1879b1314000
+      internalID: 1406963068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valdeon5petit_4
+      name: Valdeon6petit_4
       rect:
         serializedVersion: 2
-        x: 28
-        y: 40
-        width: 404
-        height: 407
+        x: 37
+        y: 10
+        width: 341
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ca2a4463a5b104196b7ff02e1907a3
-      internalID: 2033467715
+      spriteID: e0dbc0c27fa0c6746ac82c935fe5344c
+      internalID: 364746522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Valdeon5petit_5
+      name: Valdeon6petit_5
       rect:
         serializedVersion: 2
-        x: 498
-        y: 42
-        width: 399
-        height: 405
+        x: 462
+        y: 10
+        width: 313
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,50 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 426ce98e5daaf174fbe1c9c064558a30
-      internalID: -1824199988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Valdeon5petit_6
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 42
-        width: 365
-        height: 405
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56684837db2f0dd4292e74f03413d4d3
-      internalID: -1324996699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Valdeon5petit_7
-      rect:
-        serializedVersion: 2
-        x: 1386
-        y: 43
-        width: 396
-        height: 403
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c19dd0041c4296a42bc2d19a3d279653
-      internalID: 2117952492
+      spriteID: 5ab2c7690d4ba0b468389ded527bf094
+      internalID: 1460728730
       vertices: []
       indices: 
       edges: []
@@ -288,14 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Valdeon5petit_0: -1390599856
-      Valdeon5petit_1: 1559125921
-      Valdeon5petit_2: -913795731
-      Valdeon5petit_3: 1956097020
-      Valdeon5petit_4: 2033467715
-      Valdeon5petit_5: -1824199988
-      Valdeon5petit_6: -1324996699
-      Valdeon5petit_7: 2117952492
+      Valdeon6petit_0: -1220413887
+      Valdeon6petit_1: -1030279253
+      Valdeon6petit_2: -127179100
+      Valdeon6petit_3: 1406963068
+      Valdeon6petit_4: 364746522
+      Valdeon6petit_5: 1460728730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
