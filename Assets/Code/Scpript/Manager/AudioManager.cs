@@ -13,18 +13,15 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        
         if (audioReference == null)
             audioReference = this;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+
+    public void PlaySFX (int soundtoPlay)
     {
-        
+        soundsEffects[soundtoPlay].Stop();
+        soundsEffects[soundtoPlay].Play();
     }
 }
