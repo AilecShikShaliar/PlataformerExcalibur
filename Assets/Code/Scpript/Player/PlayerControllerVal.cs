@@ -129,9 +129,9 @@ public class PlayerControllerVal : MonoBehaviour
         
 
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
-        
 
 
+        _anim.SetBool("LookingRight", isLookingRight);
         _anim.SetBool("isGrounded", _isGrounded);
     }
     #endregion
@@ -156,13 +156,15 @@ public class PlayerControllerVal : MonoBehaviour
             
             StartCoroutine(DashCo());
 
-            _anim.SetTrigger("dashTrigger");
+            
         }
 
     }
 
     private IEnumerator DashCo()
     {
+        _anim.SetTrigger("dashTrigger");
+
         _canMove = false;
         _dashMove = true;
         int n;
@@ -174,6 +176,8 @@ public class PlayerControllerVal : MonoBehaviour
 
         _canMove = true;
         _dashMove = false;
+
+
     }
 
     #endregion
