@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
         
         //COMO SE MUEVE EL FONDO A LA MISMA VELOCIDAD DEL JUGADOR
         farBg.position = farBg.position + new Vector3(_amountToMove.x, _amountToMove.y, 0f);
-        middleBg.position += new Vector3(_amountToMove.x, _amountToMove.y, 0f) * .5f;
+        middleBg.position += new Vector3(_amountToMove.x, _amountToMove.y, 0f) * .2f;
 
         //ACTUALIZAR POSICION DEL JUGADOR
         _lastPos = transform.position;
