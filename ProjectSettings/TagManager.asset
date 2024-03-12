@@ -45,6 +45,9 @@ TagManager:
   - name: bg
     uniqueID: 4260908753
     locked: 0
+  - name: dark
+    uniqueID: 198710235
+    locked: 0
   - name: player
     uniqueID: 3918561325
     locked: 0

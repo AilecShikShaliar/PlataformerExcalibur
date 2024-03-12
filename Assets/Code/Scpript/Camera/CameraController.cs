@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     //POSICION DE LOS FONDOS
     public Transform farBg, middleBg;
 
-    //REFERENCIA A LA ULTIMA POSICIÓN DEL JUGADOR
+    //REFERENCIA A LA ULTIMA POSICIï¿½N DEL JUGADOR
     private Vector2 _lastPos;
 
 
@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
         
         //COMO SE MUEVE EL FONDO A LA MISMA VELOCIDAD DEL JUGADOR
         farBg.position = farBg.position + new Vector3(_amountToMove.x, _amountToMove.y, 0f);
-        middleBg.position += new Vector3(_amountToMove.x, _amountToMove.y, 0f) * .2f;
+        middleBg.position -= new Vector3(_amountToMove.x, _amountToMove.y, 0f) * .1f;
 
         //ACTUALIZAR POSICION DEL JUGADOR
         _lastPos = transform.position;
