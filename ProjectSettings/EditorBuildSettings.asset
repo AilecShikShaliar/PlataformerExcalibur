@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Scenes/NEXO (MenuSelector).unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Levels/Scenes/Biblioteca.unity
+    guid: a494e96a250461c4f8ab97193ef0b338
+  - enabled: 1
+    path: Assets/Levels/Scenes/Estanterias.unity
+    guid: 65b2c2cff71232e499d6d4d1b479f454
   m_configObjects: {}
