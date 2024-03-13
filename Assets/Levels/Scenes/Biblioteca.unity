@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: middleBg
       value: 
       objectReference: {fileID: 962127805}
+    - target: {fileID: 1018830190589026248, guid: 0f273913f481b3b448278a119f2b2bc7, type: 3}
+      propertyPath: maxHeight
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8361337784958909989, guid: 0f273913f481b3b448278a119f2b2bc7, type: 3}
       propertyPath: m_Name
       value: Main Camera
