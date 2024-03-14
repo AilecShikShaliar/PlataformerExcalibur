@@ -49,6 +49,9 @@ TagManager:
   - name: dark
     uniqueID: 198710235
     locked: 0
+  - name: puertas
+    uniqueID: 3406224179
+    locked: 0
   - name: player
     uniqueID: 3918561325
     locked: 0

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -376405971
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -1022746155, guid: cc9d6cab73b3ce84da995fc1918c180f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f80df78c4e8d74cb58ab815ef76250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
-  jumpForce: 30
+  moveSpeed: 8
+  jumpForce: 40
   runMode: 0
   graundCheckPoint: {fileID: 4736361696218561634}
   whatIsGraund:

@@ -179,8 +179,8 @@ public class PlayerControllerVal : MonoBehaviour
 
         _canMove = false;
         _dashMove = true;
-        int n;
-        if (isLookingRight) n = 2; else n = -2;
+        float n;
+        if (isLookingRight) n = 1.2f; else n = -1.2f;
         _theRB.velocity = new Vector2(dashForce * n, _theRB.velocity.y);
 
 

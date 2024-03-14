@@ -5,16 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevelManager : MonoBehaviour
 {
-    private LSUIController  _lSUIReference;
+
+    private LSUIController _lSUIReference;
 
     //REFERENCIA AL JUGADOR
-    private PlayerControllerVal _PlayerController;
+    // private PlayerControllerVal _lS;
 
     // Start is called before the first frame update
     void Start()
     {
         //INICIALICIZAMOS SCRIPT JUGADOR
-       
+        // _lS = GameObject.Find("PlayerControllerVal").GetComponent<Player>();
 
         //INICIALICIZAMOS SCRIPT LSUICONTROLLER
        _lSUIReference = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
@@ -40,15 +41,13 @@ public class LoadLevelManager : MonoBehaviour
         //ESPERAR TIEMPO DETERMINADO
         yield return new WaitForSeconds(1f);
         //CARAGAMOS EL NIVEL 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
+        // SceneManagement.LoadScene("Biblioteca");
             
-            //SceneManager
-
-        }
+            
+                
+            
         
     }
-
 
 
 
