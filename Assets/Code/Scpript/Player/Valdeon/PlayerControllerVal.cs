@@ -134,12 +134,17 @@ public class PlayerControllerVal : MonoBehaviour
         _anim.SetBool("LookingRight", isLookingRight);
         _anim.SetBool("isGrounded", _isGrounded);
     }
+
+    
+
     #endregion
 
     #region MY METHODS
     void OnCollisionEnter2D(Collision2D collision)
     {
-       
+
+        //if (collision.gameObject.CompareTag("Plataform"))
+            //transform.parent = collision.transform;
 
         if (collision.gameObject.tag == "ground")
         {
@@ -148,6 +153,13 @@ public class PlayerControllerVal : MonoBehaviour
         }
         else _isGrounded = false;
     }
+    //METODO CUANDO EL JUGADOR ENTRA EN COLISIÓN CON UN OBJETO
+
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+        //if (collision.gameObject.CompareTag("Plataform"))
+            //transform.parent = null;
+    //}
 
     public void Dash()
     {
@@ -168,10 +180,10 @@ public class PlayerControllerVal : MonoBehaviour
         _canMove = false;
         _dashMove = true;
         int n;
-        if (isLookingRight) n = 1; else n = -1;
+        if (isLookingRight) n = 2; else n = -2;
         _theRB.velocity = new Vector2(dashForce * n, _theRB.velocity.y);
 
-       
+
         yield return new WaitForSeconds(.5f);
 
         _canMove = true;

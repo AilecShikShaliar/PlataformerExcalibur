@@ -8,13 +8,13 @@ public class LoadLevelManager : MonoBehaviour
     private LSUIController  _lSUIReference;
 
     //REFERENCIA AL JUGADOR
-    private LSPlayer _lS;
+    private PlayerControllerVal _PlayerController;
 
     // Start is called before the first frame update
     void Start()
     {
         //INICIALICIZAMOS SCRIPT JUGADOR
-        _lS = GameObject.Find("PlayerControllerVal").GetComponent<LSPlayer>();
+       
 
         //INICIALICIZAMOS SCRIPT LSUICONTROLLER
        _lSUIReference = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
@@ -43,7 +43,7 @@ public class LoadLevelManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             
-            SceneManager.LoadScene(_lS.currentPoint.levelToLoad);
+            //SceneManager
 
         }
         
