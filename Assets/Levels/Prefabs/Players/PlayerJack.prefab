@@ -49,14 +49,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9037157c4c6b032408befae2b385b74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpForce: 0
+  moveSpeed: 9
+  jumpForce: 20
   runMode: 0
-  graundCheckPoint: {fileID: 0}
+  graundCheckPoint: {fileID: 4736361696218561634}
   whatIsGraund:
     serializedVersion: 2
-    m_Bits: 0
-  bounceForce: 0
+    m_Bits: 192
+  bounceForce: 13
   isLookingRight: 0
   actualSpeed: 0
 --- !u!212 &9146697637765528515
@@ -100,7 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: -376405971
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1022746155, guid: cc9d6cab73b3ce84da995fc1918c180f, type: 3}
+  m_Sprite: {fileID: 1670355843, guid: 14d8393b5629b5f4e9cc9fcb6212dc5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,7 +183,7 @@ Animator:
   m_GameObject: {fileID: 6754894019366281501}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65c7a354c5e5d1444b2401d549b8cbc3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8388faa0ba262864c9d6f3e2d77f9a77, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

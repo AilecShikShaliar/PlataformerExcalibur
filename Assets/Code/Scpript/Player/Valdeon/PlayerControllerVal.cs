@@ -35,6 +35,8 @@ public class PlayerControllerVal : MonoBehaviour
     //DashForce
     public float dashForce;
 
+    public bool _canInteracrt;
+
     //RB del jugador
     private Rigidbody2D _theRB;
     //Referencia al Animator
