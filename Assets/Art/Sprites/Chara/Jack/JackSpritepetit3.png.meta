@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14d8393b5629b5f4e9cc9fcb6212dc5f
+guid: 6f54cebf2b661d84fa91d4601ded9c13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,211 +110,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JackSpritepetit_0
+      name: JackSpritepetit3_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1219
-        width: 371
-        height: 424
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b5a6a8d5d12d4546b9da0fe600dbd24
-      internalID: 1670355843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JackSpritepetit_1
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 1212
+        x: 103
+        y: 992
         width: 370
-        height: 423
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a064507b8e51692488fa0f2210594677
-      internalID: -1701501725
+      spriteID: 47c35d45a5d0ce64d9f583327a97d3da
+      internalID: -290846760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_2
+      name: JackSpritepetit3_1
       rect:
         serializedVersion: 2
-        x: 847
-        y: 1195
-        width: 371
-        height: 423
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a230ecef2f00f945a09cc4391550eac
-      internalID: 1979238475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JackSpritepetit_3
-      rect:
-        serializedVersion: 2
-        x: 1296
-        y: 1184
+        x: 509
+        y: 992
         width: 370
-        height: 419
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 565930578c4499943867a37879d1b1aa
-      internalID: 822448073
+      spriteID: 1b42cb52f4c52f045979cd050fbeac5d
+      internalID: -292367389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_4
+      name: JackSpritepetit3_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 695
+        x: 945
+        y: 992
         width: 370
-        height: 425
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f03744eebda424bb91f3a9dd3c40f5
-      internalID: 823599488
+      spriteID: 117f9b2dbe749ce42bfed95f53f33a18
+      internalID: 1994008361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_5
+      name: JackSpritepetit3_3
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 695
+        x: 1392
+        y: 992
         width: 370
-        height: 415
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4801988537b67a94da156ef9a39a7383
-      internalID: -894025596
+      spriteID: af657f9e1328dff429e19a8e44f171b7
+      internalID: -1329665035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_6
+      name: JackSpritepetit3_4
       rect:
         serializedVersion: 2
-        x: 47
-        y: 122
+        x: 110
+        y: 523
         width: 370
-        height: 409
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5c75a814d195f4ab5f9794d64d3860
-      internalID: -1208086819
+      spriteID: 674dabc63e0de8a49914c693e5806384
+      internalID: -1777049666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_7
+      name: JackSpritepetit3_5
       rect:
         serializedVersion: 2
-        x: 495
-        y: 133
-        width: 371
-        height: 414
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e99e584c4cf8bb4db77a8544a4b3467
-      internalID: -319088577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JackSpritepetit_8
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 150
+        x: 537
+        y: 514
         width: 370
-        height: 416
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad84a79b00a79de4495d406a2bb94dd7
-      internalID: -1135467820
+      spriteID: bd48ab3eb88f69948afef438919b3f4d
+      internalID: 1950571173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackSpritepetit_9
+      name: JackSpritepetit3_6
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 157
-        width: 371
-        height: 413
+        x: 987
+        y: 514
+        width: 370
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be32446a19aea8140a487c1ac0ddbb04
-      internalID: 901329794
+      spriteID: 5a08ffbe6eb2f4d47b93afc770807f87
+      internalID: -1453770117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JackSpritepetit3_7
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 514
+        width: 370
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afa7e908fb6084418fff1a105a450c9
+      internalID: 420888632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JackSpritepetit3_8
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 370
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439fafc1f782aa642a7efe119388686d
+      internalID: 20497824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JackSpritepetit3_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 32
+        width: 370
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510299fe4b948864dbab64be5be7d274
+      internalID: -356440167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JackSpritepetit3_10
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 63
+        width: 370
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdda00c0ed9008f4eb99a6d8d3efdd16
+      internalID: -1929555862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JackSpritepetit3_11
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 63
+        width: 370
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48561b3fd793d1344958ece8339234bb
+      internalID: 228143134
       vertices: []
       indices: 
       edges: []
@@ -330,16 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JackSpritepetit_0: 1670355843
-      JackSpritepetit_1: -1701501725
-      JackSpritepetit_2: 1979238475
-      JackSpritepetit_3: 822448073
-      JackSpritepetit_4: 823599488
-      JackSpritepetit_5: -894025596
-      JackSpritepetit_6: -1208086819
-      JackSpritepetit_7: -319088577
-      JackSpritepetit_8: -1135467820
-      JackSpritepetit_9: 901329794
+      JackSpritepetit3_0: -290846760
+      JackSpritepetit3_1: -292367389
+      JackSpritepetit3_10: -1929555862
+      JackSpritepetit3_11: 228143134
+      JackSpritepetit3_2: 1994008361
+      JackSpritepetit3_3: -1329665035
+      JackSpritepetit3_4: -1777049666
+      JackSpritepetit3_5: 1950571173
+      JackSpritepetit3_6: -1453770117
+      JackSpritepetit3_7: 420888632
+      JackSpritepetit3_8: 20497824
+      JackSpritepetit3_9: -356440167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
