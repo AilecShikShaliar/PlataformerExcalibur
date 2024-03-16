@@ -15,10 +15,15 @@ public class Puerta : MonoBehaviour
 
     public Animator puertaanim;
 
-    private LoadLevelManager _LLevelReference;
+    private LoadLevelManager _lLevelReference;
     #endregion
 
     #region UNITY METHODS
+
+    private void Awake()
+    {
+        _lLevelReference = GameObject.Find("LoadLevelManager").GetComponent<LoadLevelManager>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +38,7 @@ public class Puerta : MonoBehaviour
 
         {
             puertaanim.SetTrigger("openDoor");
+            
             
         }
     }

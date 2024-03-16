@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     //Variable de tiempo para la corrutina
@@ -13,9 +13,15 @@ public class LevelManager : MonoBehaviour
     //private UIController _uIReference;
     private PlayerHealthController _pHReference;
 
+    //SALIR DEL NIVEL
+    public string levelToLoad;
+
+    private LSUIController _lSUIController;
+
     private void Start()
     {
         //Inicializamos las refs
+        _lSUIController = GameObject.Find("Canvas").GetComponent<LSUIController>();
         _pCReference = GameObject.Find("Player").GetComponent<PlayerControllerVal>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
@@ -28,7 +34,20 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(RespawnPlayerCo());
     }
 
-    //Corrutina
+    public void ExitLevel()
+    {
+        StartCoroutine(ExitLevelCo());
+
+    }
+
+    //CORRUTINAS
+    private IEnumerator ExitLevelCo()
+    {
+        _lSUIController.FadeToBlack();
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(levelToLoad);
+    }
     private IEnumerator RespawnPlayerCo()
     {
         //Desactivamos al jugador
