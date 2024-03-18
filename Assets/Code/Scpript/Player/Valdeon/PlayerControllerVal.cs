@@ -117,6 +117,7 @@ public class PlayerControllerVal : MonoBehaviour
                         _theRB.velocity = new Vector2(_theRB.velocity.x, jumpForce);
 
                         _canDubleJump = true;
+                        AudioManager.audioReference.PlaySFX(2);
                     }
 
                     else
@@ -126,6 +127,7 @@ public class PlayerControllerVal : MonoBehaviour
                             _theRB.velocity = new Vector2(_theRB.velocity.x, jumpForce);
 
                             _canDubleJump = false;
+                            AudioManager.audioReference.PlaySFX(2);
                         }
                     }
 

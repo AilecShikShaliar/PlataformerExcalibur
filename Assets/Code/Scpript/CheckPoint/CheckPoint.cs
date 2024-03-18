@@ -37,9 +37,9 @@ public class Checkpoint : MonoBehaviour
             _cReference.DeactivateCheckpoints();
             //Guarda la pos del cp para el spawn
             _cReference.SetSpawnPoint(transform.position);
-            AudioManager.audioReference.PlaySFX(1);
-
+            
             checkpointanim.SetTrigger("CheckPoint");
+            AudioManager.audioReference.PlaySFX(1);
             
         }
     }

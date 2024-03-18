@@ -112,6 +112,7 @@ public class PlayerControllerJack: MonoBehaviour
                         _theRB.velocity = new Vector2(_theRB.velocity.x, jumpForce);
 
                         _canDubleJump = true;
+                        AudioManager.audioReference.PlaySFX(2);
                     }
 
 
