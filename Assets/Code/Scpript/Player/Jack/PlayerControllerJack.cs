@@ -75,6 +75,7 @@ public class PlayerControllerJack: MonoBehaviour
 
         if (Input.GetAxisRaw("Horizontal") !=0f && _canMove)
         {
+            
 
             
             _canRun = true;

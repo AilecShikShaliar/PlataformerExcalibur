@@ -71,7 +71,8 @@ public class PlayerControllerVal : MonoBehaviour
         _isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f,whatIsGraund);
 
         if(_theRB.velocity.x != 0 || _theRB.velocity.y != 0)
-         Dash();
+         Dash(); 
+         
         
         if (Input.GetAxisRaw("Horizontal") > 0.1f) isLookingRight = true;
         else if (Input.GetAxisRaw("Horizontal") < -0.1f) isLookingRight = false;
@@ -93,6 +94,7 @@ public class PlayerControllerVal : MonoBehaviour
             }
             else
             {
+                
                 runMode = 1f;
                 _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
                 _anim.SetBool("canMove", false);
@@ -178,12 +180,14 @@ public class PlayerControllerVal : MonoBehaviour
     private IEnumerator DashCo()
     {
         _anim.SetTrigger("dashTrigger");
+        
 
         _canMove = false;
         _dashMove = true;
-        float n;
-        if (isLookingRight) n = 1.2f; else n = -1.2f;
+        int n;
+        if (isLookingRight) n = 1; else n = -1;
         _theRB.velocity = new Vector2(dashForce * n, _theRB.velocity.y);
+        AudioManager.audioReference.PlaySFX(0);
 
 
         yield return new WaitForSeconds(.5f);

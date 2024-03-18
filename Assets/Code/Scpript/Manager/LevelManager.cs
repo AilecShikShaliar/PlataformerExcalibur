@@ -21,11 +21,12 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         //Inicializamos las refs
-        _lSUIController = GameObject.Find("Canvas").GetComponent<LSUIController>();
+        _lSUIController = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
         _pCReference = GameObject.Find("Player").GetComponent<PlayerControllerVal>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
+        
     }
 
     //RESPAWN

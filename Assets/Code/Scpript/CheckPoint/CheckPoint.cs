@@ -24,6 +24,7 @@ public class Checkpoint : MonoBehaviour
         _cReference = transform.parent.GetComponent<CheckpointController>();
 
         checkpointanim = GetComponent<Animator>();
+        
     }
 
     //Saber si el jugador ha entrado en la zona del cp
@@ -36,8 +37,10 @@ public class Checkpoint : MonoBehaviour
             _cReference.DeactivateCheckpoints();
             //Guarda la pos del cp para el spawn
             _cReference.SetSpawnPoint(transform.position);
+            AudioManager.audioReference.PlaySFX(1);
 
             checkpointanim.SetTrigger("CheckPoint");
+            
         }
     }
 
