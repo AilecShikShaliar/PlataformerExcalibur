@@ -17,22 +17,22 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             
-           transform.position = new Vector2(-16.35f, 0.4f);
+           transform.position = new Vector2(-16.35f, 2.15f);
         }
         
         else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
            
-            transform.position = new Vector2(-16.35f, -1.44f);
+            transform.position = new Vector2(-16.35f, 0.41f);
         }
 
         else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
            
-            transform.position = new Vector2(-16.35f, -3.22f);
+            transform.position = new Vector2(-16.35f, -1.3f);
         }
 
-        if(transform.position.y == 0.4f && Input.GetKeyDown(KeyCode.Space))
+        if(transform.position.y == 2.15f && Input.GetKeyDown(KeyCode.Space))
         {
           
             SceneManager.LoadScene("Nexo");
