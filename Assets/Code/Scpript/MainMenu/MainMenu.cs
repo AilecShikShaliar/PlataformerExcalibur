@@ -3,41 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform[] points;
+
+    public int currentPoint;
+
+    public Transform _cursorPosition;
+
+     void Start()
     {
-        
+        currentPoint = 0;
     }
 
-        void Update()
+    void Update()
     {
-     
+        Debug.Log("EstamosEn" + currentPoint);
+
+        _cursorPosition.position = points[currentPoint].position;
+        //_cursorPosition.position = new Vector2(Input.GetAxis("Vertical")
+
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
+
+            if (currentPoint == 0) currentPoint = 2;
+            else currentPoint--;
+
+
+        }
+        if ( Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
             
-           transform.position = new Vector2(-16.35f, 2.15f);
+            if (currentPoint == points.Length - 1) currentPoint = 0;
+            else currentPoint++;
         }
         
-        else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
-           
-            transform.position = new Vector2(-16.35f, 0.41f);
-        }
-
-        else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-           
-            transform.position = new Vector2(-16.35f, -1.3f);
-        }
-
-        if(transform.position.y == 2.15f && Input.GetKeyDown(KeyCode.Space))
-        {
-          
             SceneManager.LoadScene("Nexo");
         }
+        if (currentPoint == 2 && Input.GetKeyDown(KeyCode.Space))
+        {
+            QuitGame();
+        }
+    }
 
+    public void QuitGame()
+    {
         
+        Application.Quit();
+        
+        Debug.Log("Quitting Game");
     }
 }

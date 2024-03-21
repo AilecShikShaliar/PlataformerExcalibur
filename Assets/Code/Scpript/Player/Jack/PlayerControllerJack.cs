@@ -32,6 +32,7 @@ public class PlayerControllerJack: MonoBehaviour
     //EjeXY
     public bool isLookingRight;
 
+    public bool canInteract = false;
 
     //RB del jugador
     private Rigidbody2D _theRB;
