@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
 
             if (currentPoint == 0) currentPoint = 2;
             else currentPoint--;
+            AudioManager.audioReference.PlaySFX(0);
 
 
         }
@@ -37,15 +38,18 @@ public class MainMenu : MonoBehaviour
             
             if (currentPoint == points.Length - 1) currentPoint = 0;
             else currentPoint++;
+            AudioManager.audioReference.PlaySFX(0);
         }
         
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene("Nexo");
+            AudioManager.audioReference.PlaySFX(1);
         }
         if (currentPoint == 2 && Input.GetKeyDown(KeyCode.Space))
         {
             QuitGame();
+            AudioManager.audioReference.PlaySFX(1);
         }
     }
 
