@@ -137,7 +137,9 @@ MonoBehaviour:
     m_Bits: 192
   bounceForce: 0
   isLookingRight: 0
+  canInteract: 0
   actualSpeed: 0
+  startingPosition: {fileID: 11400000, guid: 13dc4e9f402aa6a438ec74b73710cd74, type: 2}
 --- !u!70 &3681739667680931885
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

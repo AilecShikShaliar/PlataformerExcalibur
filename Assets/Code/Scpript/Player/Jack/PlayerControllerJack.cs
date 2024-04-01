@@ -18,8 +18,7 @@ public class PlayerControllerJack: MonoBehaviour
     public Transform graundCheckPoint;
     //Referencia a las Layer del suelo
     public LayerMask whatIsGraund;
-    //Doble salto
-    private bool _canDubleJump;
+    
     //correr
     private bool _canRun;
     //Fuerza de rebote del jugador
@@ -27,7 +26,6 @@ public class PlayerControllerJack: MonoBehaviour
 
     private bool _canMove = true;
 
-    private bool _dashMove;
 
     //EjeXY
     public bool isLookingRight;
@@ -42,6 +40,9 @@ public class PlayerControllerJack: MonoBehaviour
     private SpriteRenderer _theSR;
     //Velocidad al correr
     public float actualSpeed;
+
+    public VectorValue startingPosition;
+
     #endregion
 
     #region UNITY METHODS
@@ -57,6 +58,8 @@ public class PlayerControllerJack: MonoBehaviour
         _theSR = GetComponent<SpriteRenderer>();
 
         isLookingRight = true;
+         
+         transform.position = startingPosition.initialValue;
     }
 
    
@@ -112,7 +115,7 @@ public class PlayerControllerJack: MonoBehaviour
                     {
                         _theRB.velocity = new Vector2(_theRB.velocity.x, jumpForce);
 
-                        _canDubleJump = true;
+                        
                         AudioManager.audioReference.PlaySFX(2);
                     }
 
