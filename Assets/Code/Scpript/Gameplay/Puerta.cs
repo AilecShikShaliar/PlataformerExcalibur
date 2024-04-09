@@ -17,6 +17,13 @@ public class Puerta : MonoBehaviour
 
 
     private LevelManager _lReference;
+
+    public GameObject infoPanel;
+
+    public int levelToLoad;
+
+    private PuertaMenu _puertaM;
+    
     #endregion
 
     #region UNITY METHODS
@@ -25,7 +32,8 @@ public class Puerta : MonoBehaviour
     {
         
         _lReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-        
+        _puertaM = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
+
     }
     // Start is called before the first frame update
     void Start()
@@ -33,6 +41,10 @@ public class Puerta : MonoBehaviour
         puertaanim = GetComponent<Animator>();
 
         _sR = GetComponent<SpriteRenderer>();
+
+       
+
+
     }
 
     private void Update()
@@ -41,8 +53,8 @@ public class Puerta : MonoBehaviour
 
         {
             puertaanim.SetTrigger("openDoor");
+            _puertaM.Pausa();
             
-            _lReference.ExitLevel();
             
         }
     }
@@ -54,6 +66,7 @@ public class Puerta : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _canopendoor = true;
+            infoPanel.SetActive(true);
         
         }
 
@@ -63,7 +76,14 @@ public class Puerta : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _canopendoor = false;
+            infoPanel.SetActive(false);
+
         }
+    }
+
+    public void LoadLevel(int n)
+    {
+        StartCoroutine(_lReference.ExitLevelCo(n));
     }
 
     #endregion
