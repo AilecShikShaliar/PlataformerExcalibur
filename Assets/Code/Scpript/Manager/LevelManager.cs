@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public float waitToRespawn;
 
     //Refs
-    private PlayerControllerVal _pCReference;
+    private PlayerController _pCReference;
     private CheckpointController _cReference;
     //private UIController _uIReference;
     private PlayerHealthController _pHReference;
@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     {
         //Inicializamos las refs
         _lSUIController = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
-        _pCReference = GameObject.Find("Player").GetComponent<PlayerControllerVal>();
+        _pCReference = GameObject.Find("Player").GetComponent<PlayerController>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("Puerta").GetComponent<PuertaMenu>();
         //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
