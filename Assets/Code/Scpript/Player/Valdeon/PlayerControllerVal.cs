@@ -59,7 +59,7 @@ public class PlayerControllerVal : MonoBehaviour
                          GetComponent<PlayerController>().theRB.velocity = new Vector2(GetComponent<PlayerController>().theRB.velocity.x, GetComponent<PlayerController>().jumpForce);
 
                             _canDubleJump = false;
-                            AudioManager.audioReference.PlaySFX(2);
+                            AudioManager.audioReference.PlaySFX(4);
                         }
                     
 

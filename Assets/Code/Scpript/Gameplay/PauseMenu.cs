@@ -55,6 +55,7 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("adios");
         Application.Quit();
+        AudioManager.audioReference.PlaySFX(3);
     }
 }
 

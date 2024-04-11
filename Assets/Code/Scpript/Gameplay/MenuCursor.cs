@@ -34,6 +34,7 @@ public class MenuCursor : MonoBehaviour
 
             if (currentPoint == 0) currentPoint = 3;
             else currentPoint--;
+            AudioManager.audioReference.PlaySFX(3);
 
 
         }
@@ -42,27 +43,32 @@ public class MenuCursor : MonoBehaviour
 
             if (currentPoint == points.Length - 1) currentPoint = 0;
             else currentPoint++;
+            AudioManager.audioReference.PlaySFX(3);
         }
 
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             _pMenuRef.Reanudar();
+            
         }
 
         if (currentPoint == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Guardando");
+           
         }
 
         if (currentPoint == 2 && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Objetos");
         }
+       
 
         if (currentPoint == 3 && Input.GetKeyDown(KeyCode.Space))
         {
             Time.timeScale = 1f;
             SceneManager.LoadScene("MainMenu");
+            
         }
 
     }

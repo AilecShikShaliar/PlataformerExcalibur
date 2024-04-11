@@ -22,10 +22,11 @@ public class PuertaMenu : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            
             if (_pausedGame)
             {
-                
                 Reanudar();
+                AudioManager.audioReference.PlaySFX(2);
             }
         }
 
@@ -40,6 +41,7 @@ public class PuertaMenu : MonoBehaviour
         MenuPuerta.SetActive(true);
         _pausedGame = true;
         _MenuP.enabled = false;
+        
     }
 
     public void Reanudar()
@@ -49,6 +51,7 @@ public class PuertaMenu : MonoBehaviour
         _pCref.enabled = true;
         Time.timeScale = 1f;
         _MenuP.enabled = true;
+        
 
     }
 

@@ -57,6 +57,7 @@ public class Puerta : MonoBehaviour
         {
             puertaanim.SetTrigger("openDoor");
             _puertaM.Pausa();
+            AudioManager.audioReference.PlaySFX(2);
            // _PCRef.enabled = false;
             
             

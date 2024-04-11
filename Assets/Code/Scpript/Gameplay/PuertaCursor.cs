@@ -43,6 +43,7 @@ public class PuertaCursor : MonoBehaviour
 
             if (currentPoint == 0) currentPoint = 1;
             else currentPoint--;
+            AudioManager.audioReference.PlaySFX(3);
 
 
         }
@@ -51,6 +52,7 @@ public class PuertaCursor : MonoBehaviour
 
             if (currentPoint == points.Length - 1) currentPoint = 0;
             else currentPoint++;
+            AudioManager.audioReference.PlaySFX(3);
         }
 
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
@@ -58,11 +60,13 @@ public class PuertaCursor : MonoBehaviour
             _puertaYah.LoadLevel(scene);
             _puertaM.Reanudar();
             Debug.Log("Hey, no se abre");
+            
         }
 
         if (currentPoint == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             _puertaM.Reanudar();
+            
             
         }
 

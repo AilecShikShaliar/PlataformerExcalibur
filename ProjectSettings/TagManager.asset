@@ -52,6 +52,9 @@ TagManager:
   - name: puertas
     uniqueID: 3406224179
     locked: 0
+  - name: panel info
+    uniqueID: 3720609829
+    locked: 0
   - name: player
     uniqueID: 3918561325
     locked: 0
