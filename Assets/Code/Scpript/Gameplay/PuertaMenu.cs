@@ -11,6 +11,11 @@ public class PuertaMenu : MonoBehaviour
     private Puerta _puertaYhea;
     private PauseMenu _MenuP;
 
+    private void Awake()
+    {
+        _MenuP = GetComponent<PauseMenu> ();
+    }
+
 
     private void Update()
     {

@@ -23,7 +23,9 @@ public class Puerta : MonoBehaviour
     public int levelToLoad;
 
     private PuertaMenu _puertaM;
-    
+
+    private PlayerController _PCRef;
+
     #endregion
 
     #region UNITY METHODS
@@ -32,6 +34,7 @@ public class Puerta : MonoBehaviour
     {
         
         _lReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        _PCRef = GameObject.Find("Player").GetComponent<PlayerController>();
         _puertaM = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
 
     }
@@ -54,6 +57,7 @@ public class Puerta : MonoBehaviour
         {
             puertaanim.SetTrigger("openDoor");
             _puertaM.Pausa();
+           // _PCRef.enabled = false;
             
             
         }
@@ -83,7 +87,9 @@ public class Puerta : MonoBehaviour
 
     public void LoadLevel(int n)
     {
+        _PCRef.enabled = true;
         StartCoroutine(_lReference.ExitLevelCo(n));
+        
     }
 
     #endregion

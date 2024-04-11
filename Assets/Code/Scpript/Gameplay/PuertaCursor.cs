@@ -13,14 +13,18 @@ public class PuertaCursor : MonoBehaviour
 
     private PuertaMenu _puertaM;
 
-    private Puerta _puertaYah;
+    public Puerta _puertaYah;
+
     public int scene;
 
-    
+    private PauseMenu _pMenuRef;
+
 
     private void Awake()
     {
         _puertaM = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
+       
+
 
     }
     void Start()
@@ -34,7 +38,7 @@ public class PuertaCursor : MonoBehaviour
         _cursorPosition.position = points[currentPoint].position;
         //_cursorPosition.position = new Vector2(Input.GetAxis("Vertical")
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
 
             if (currentPoint == 0) currentPoint = 1;
@@ -42,7 +46,7 @@ public class PuertaCursor : MonoBehaviour
 
 
         }
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             if (currentPoint == points.Length - 1) currentPoint = 0;
@@ -52,6 +56,8 @@ public class PuertaCursor : MonoBehaviour
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             _puertaYah.LoadLevel(scene);
+            _puertaM.Reanudar();
+            Debug.Log("Hey, no se abre");
         }
 
         if (currentPoint == 1 && Input.GetKeyDown(KeyCode.Space))

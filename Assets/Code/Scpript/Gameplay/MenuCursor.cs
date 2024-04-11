@@ -16,6 +16,7 @@ public class MenuCursor : MonoBehaviour
     private void Awake()
     {
         _pMenuRef = GameObject.Find("LevelManager").GetComponent<PauseMenu>();
+        
     }
     void Start()
     {

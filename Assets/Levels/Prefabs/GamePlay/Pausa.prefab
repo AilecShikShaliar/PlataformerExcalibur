@@ -462,7 +462,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7865116240120401210}
   - component: {fileID: 6841191724106504926}
-  - component: {fileID: 2469695279154886186}
   - component: {fileID: 2416497236465636011}
   m_Layer: 0
   m_Name: cursor
@@ -498,25 +497,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4192747904092518986}
   m_CullTransparentMesh: 1
---- !u!114 &2469695279154886186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4192747904092518986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b6578aa0657e34ebf8754e64100d96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points:
-  - {fileID: 2488431739448764348}
-  - {fileID: 2558760546572256162}
-  - {fileID: 1672680957097507680}
-  - {fileID: 8150082367493447043}
-  currentPoint: 0
-  _cursorPosition: {fileID: 7865116240120401210}
 --- !u!114 &2416497236465636011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3486593748062047588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1066,9 +1046,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points:
   - {fileID: 2488431739448764348}
-  - {fileID: 4826471691704789977}
-  - {fileID: 8186961141667070254}
-  - {fileID: 5645821904916244425}
+  - {fileID: 2558760546572256162}
+  - {fileID: 1672680957097507680}
+  - {fileID: 8150082367493447043}
   currentPoint: 0
   _cursorPosition: {fileID: 7865116240120401210}
 --- !u!1 &8884966708546664351
