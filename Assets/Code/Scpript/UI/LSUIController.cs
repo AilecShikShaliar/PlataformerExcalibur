@@ -7,11 +7,12 @@ public class LSUIController : MonoBehaviour
 {
     public Image fadeScreen;
     public float fadeSpeed;
-    private bool shouldFadeToBlack, shouldFadeFromBlack;
+    public bool shouldFadeToBlack, shouldFadeFromBlack;
     // Start is called before the first frame update
     void Start()
     {
         FadeFromBlack();
+       
     }
 
     // Update is called once per frame
@@ -19,22 +20,22 @@ public class LSUIController : MonoBehaviour
     {
         if (shouldFadeToBlack)
         {
-             if (shouldFadeFromBlack)
-            {
-                fadeScreen.color = new Color (fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
-
-                if (fadeScreen.color.a == 1f) shouldFadeToBlack = false;
-
-            }
-           if (shouldFadeFromBlack)
             
-             if (shouldFadeFromBlack)
-            {
-                fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
-
-                if (fadeScreen.color.a == 0f) shouldFadeFromBlack = false;
-            }
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
             
+            if (fadeScreen.color.a == 1f)
+              
+                shouldFadeToBlack = false;
+        }
+       
+        if (shouldFadeFromBlack)
+        {
+          
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            
+            if (fadeScreen.color.a == 0f)
+               
+                shouldFadeFromBlack = false;
         }
 
     }
@@ -43,11 +44,13 @@ public class LSUIController : MonoBehaviour
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
+        Debug.Log("abrir");
     }
     public void FadeFromBlack()
     {
         shouldFadeFromBlack = true;
         shouldFadeToBlack = false;
+        Debug.Log("Cerrar");
 
     }
   

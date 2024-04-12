@@ -19,11 +19,13 @@ public class PuertaCursor : MonoBehaviour
 
     private PauseMenu _pMenuRef;
 
+    private LSUIController _lSUIC;
+
 
     private void Awake()
     {
         _puertaM = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
-       
+        _lSUIC = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
 
 
     }
@@ -57,8 +59,9 @@ public class PuertaCursor : MonoBehaviour
 
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            _puertaYah.LoadLevel(scene);
+            Invoke("CargarEscena", 3f);
             _puertaM.Reanudar();
+            _lSUIC.FadeToBlack();
             Debug.Log("Hey, no se abre");
             
         }
@@ -71,4 +74,10 @@ public class PuertaCursor : MonoBehaviour
         }
 
     }
+
+    private void CargarEscena()
+    {
+        _puertaYah.LoadLevel(scene);
+    }
+
     }

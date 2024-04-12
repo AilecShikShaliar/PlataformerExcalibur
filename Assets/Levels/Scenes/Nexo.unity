@@ -1488,10 +1488,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 2030214975663182894, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2086451446779873848, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1570,18 +1566,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2086451446779873848, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372246839459402889, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372246839459402889, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372246839459402889, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
-      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6318,6 +6302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 668115528}
   fadeSpeed: 3
+  shouldFadeToBlack: 0
+  shouldFadeFromBlack: 0
 --- !u!1 &1449795805
 GameObject:
   m_ObjectHideFlags: 0

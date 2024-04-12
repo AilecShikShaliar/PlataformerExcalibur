@@ -10,10 +10,12 @@ public class PuertaMenu : MonoBehaviour
     public PlayerControllerVal _pCref;
     private Puerta _puertaYhea;
     private PauseMenu _MenuP;
+    
 
     private void Awake()
     {
         _MenuP = GetComponent<PauseMenu> ();
+        
     }
 
 
