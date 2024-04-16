@@ -494,6 +494,7 @@ MonoBehaviour:
   - {fileID: 1055536611}
   currentPoint: 0
   _cursorPosition: {fileID: 357376985}
+  lSUIController: {fileID: 844676931}
 --- !u!224 &535996424 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2086451446779873848, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
@@ -675,7 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b58b710e4f1ca9428fedc225e50286d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeScreen: {fileID: 0}
+  fadeScreen: {fileID: 1721835753}
   fadeSpeed: 3
   shouldFadeToBlack: 0
   shouldFadeFromBlack: 0
@@ -1237,7 +1238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2030214975663182894, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2086451446779873848, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
       propertyPath: m_Pivot.x
@@ -1617,6 +1618,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721835753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3372246839459402889, guid: 5a20bcfeedeae2747b49e9d2e69569df, type: 3}
+  m_PrefabInstance: {fileID: 1307406998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767442047
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,9 +12,12 @@ public class MainMenu : MonoBehaviour
 
     public Transform _cursorPosition;
 
+    public LSUIController lSUIController;
+
      void Start()
     {
         currentPoint = 0;
+
     }
 
     void Update()
@@ -43,7 +46,7 @@ public class MainMenu : MonoBehaviour
         
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("Nexo");
+            StartCoroutine(ExitLevelCo(1));
             AudioManager.audioReference.PlaySFX(1);
         }
         if (currentPoint == 2 && Input.GetKeyDown(KeyCode.Space))
@@ -59,5 +62,14 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         
         Debug.Log("Quitting Game");
+    }
+
+    public IEnumerator ExitLevelCo(int Scene)
+    {
+        lSUIController.FadeToBlack();
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(Scene);
+
     }
 }
