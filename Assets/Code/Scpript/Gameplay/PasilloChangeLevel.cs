@@ -10,11 +10,14 @@ public class PasilloChangeLevel : MonoBehaviour
     public GameObject infoPanel;
     
 
+
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if(collider.CompareTag ("Player") && Input.GetKeyDown(KeyCode.F))
+        if(collider.CompareTag ("Player"))
         {
-            SceneManager.LoadScene(Scene);
+
+           if(Input.GetKeyDown(KeyCode.Return)) StartCoroutine(GameObject.Find("LevelManager").GetComponent<LevelManager>().ExitLevelCo(Scene));
+            Debug.Log("pasarPasillo");
         }
     }
 

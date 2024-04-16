@@ -13,7 +13,6 @@ public class LevelManager : MonoBehaviour
     //private UIController _uIReference;
     private PlayerHealthController _pHReference;
     private PuertaMenu _pMenu;
-
     //SALIR DEL NIVEL
     public string levelToLoad;
 
@@ -30,7 +29,7 @@ public class LevelManager : MonoBehaviour
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
         
     }
-
+    
     //RESPAWN
     public void RespawnPlayer()
     {
