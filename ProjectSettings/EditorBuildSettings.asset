@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Scenes/Level 1/Estanterias.unity
     guid: 65b2c2cff71232e499d6d4d1b479f454
+  - enabled: 1
+    path: "Assets/Levels/Scenes/habitaci\xF3n.unity"
+    guid: 442e33c0d3b26b846a666fc4ceaa9a56
   m_configObjects: {}

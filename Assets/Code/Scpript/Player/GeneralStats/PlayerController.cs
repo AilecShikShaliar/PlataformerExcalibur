@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     public VectorValue startingPosition;
 
+    public Sprite thePlayerSprite;
+
     // Start is called before the first frame update
     void Start()
     {
