@@ -38,9 +38,8 @@ public class PlayerController : MonoBehaviour
     //Velocidad al correr
     public float actualSpeed;
 
-    public VectorValue startingPosition;
-
     public Sprite thePlayerSprite;
+    public static PlayerController instance;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +55,6 @@ public class PlayerController : MonoBehaviour
 
         isLookingRight = true;
 
-        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

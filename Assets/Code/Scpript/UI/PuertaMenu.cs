@@ -10,12 +10,14 @@ public class PuertaMenu : MonoBehaviour
     public PlayerControllerVal _pCref;
     private Puerta _puertaYhea;
     private PauseMenu _MenuP;
+    //private PuertaCursor _pCursor;
     
 
     private void Awake()
     {
-        _MenuP = GetComponent<PauseMenu> ();
-        
+        _MenuP = GetComponent<PauseMenu>();
+        //_pCursor = GameObject.Find("PuertaPausa").GetComponent<PuertaCursor>();
+
     }
 
 
@@ -29,6 +31,8 @@ public class PuertaMenu : MonoBehaviour
             {
                 Reanudar();
                 AudioManager.audioReference.PlaySFX(2);
+              
+
             }
         }
 
@@ -42,8 +46,11 @@ public class PuertaMenu : MonoBehaviour
         Time.timeScale = 0f;
         MenuPuerta.SetActive(true);
         _pausedGame = true;
-        _MenuP.enabled = false;
-        
+        _MenuP.enabled = true;
+        //_pCursor.enabled = false;
+       
+
+
     }
 
     public void Reanudar()
@@ -52,8 +59,8 @@ public class PuertaMenu : MonoBehaviour
         _pausedGame = false;
         _pCref.enabled = true;
         Time.timeScale = 1f;
-        _MenuP.enabled = true;
-        
+        _MenuP.enabled = false;
+        //_pCursor.enabled = true;
 
     }
 
