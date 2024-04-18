@@ -77,7 +77,7 @@ public class PlayerControllerVal : MonoBehaviour
 
     public void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("dash");
 

@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
         if (dialogBox.activeInHierarchy)
         {
             //Al pulsar la tecla X
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 //Si el diálogo no ha empezado ahora mismo
                 if (!justStarted)
@@ -60,6 +60,8 @@ public class DialogueManager : MonoBehaviour
                         dialogBox.SetActive(false);
                         //Permitimos que el jugador se mueva de nuevo
                        PlayerController.instance.canMove = true;
+                       
+                        
                     }
                     //Si el diálogo aún no ha terminado
                     else
@@ -96,6 +98,9 @@ public class DialogueManager : MonoBehaviour
         justStarted = true;
         //Hacemos que el jugador no se pueda mover
         PlayerController.instance.canMove = false;
+        
+        
+      
     }
 
     //Método para conocer si hay un cambio de personaje en el diálogo

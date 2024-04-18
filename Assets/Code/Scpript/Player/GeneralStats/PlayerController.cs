@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public float actualSpeed;
 
     public Sprite thePlayerSprite;
+
     public static PlayerController instance;
 
     // Start is called before the first frame update
@@ -61,61 +62,62 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //BOTÓN DE CORRER
-
-
-        isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f, whatIsGraund);
-
-
-
-
-        if (Input.GetAxisRaw("Horizontal") > 0.1f) isLookingRight = true;
-        else if (Input.GetAxisRaw("Horizontal") < -0.1f) isLookingRight = false;
-
-
-        if (Input.GetAxisRaw("Horizontal") != 0f && canMove)
+        if(canMove)
         {
+            isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f, whatIsGraund);
 
 
 
-            _canRun = true;
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, theRB.velocity.y);
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetAxisRaw("Horizontal") > 0.1f) isLookingRight = true;
+            else if (Input.GetAxisRaw("Horizontal") < -0.1f) isLookingRight = false;
+
+
+            if (Input.GetAxisRaw("Horizontal") != 0f)
             {
 
-                _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
-                _anim.SetBool("canMove", true);
-                runMode = 2f;
+
+
+                _canRun = true;
+                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, theRB.velocity.y);
+
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+
+                    _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                    _anim.SetBool("canMove", true);
+                    runMode = 2f;
+                }
+                else
+                {
+                    runMode = 1f;
+                    _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                    _anim.SetBool("canMove", false);
+
+                }
             }
             else
             {
-                runMode = 1f;
-                _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                _anim.SetFloat("moveSpeed", 0f);
                 _anim.SetBool("canMove", false);
-
+                _canRun = false;
             }
-        }
-        else
-        {
-            _anim.SetFloat("moveSpeed", 0f);
-            _anim.SetBool("canMove", false);
-            _canRun = false;
-        }
-        actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
-        //BOTON DE SALTO
-        if (Input.GetButtonDown("Jump"))
-        {
-            //si el jugador est� en el suelo
-            if (isGrounded)
+            actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
+            //BOTON DE SALTO
+            if (Input.GetButtonDown("Jump"))
             {
-                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                Debug.Log("mierda");
+                //si el jugador est� en el suelo
+                if (isGrounded)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                    AudioManager.audioReference.PlaySFX(4);
+                }
 
-
-                AudioManager.audioReference.PlaySFX(4);
             }
-
-
         }
+
+      
 
 
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));

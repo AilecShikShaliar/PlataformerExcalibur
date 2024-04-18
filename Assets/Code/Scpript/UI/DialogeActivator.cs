@@ -22,8 +22,11 @@ public class DialogActivator : MonoBehaviour
     {
         //Si el jugador puede activar el diálogo y presiona el botón de interacción y la caja de diálogo no está activa en la jerarquía
         if (canActivate && Input.GetKeyDown(KeyCode.F) && !DialogueManager.instance.dialogBox.activeInHierarchy)
-            //Llamamos al método que muestra el diálogo y le pasamos las líneas concretas que contiene este objeto
+        {
+
             DialogueManager.instance.ShowDialog(lines, theNpcSprite);
+            GameObject.Find("Player").GetComponent<PlayerController>().canMove = false;
+        }
     }
 
     //Si el jugador entra en la zona de Trigger puede activar el diálogo
@@ -31,6 +34,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
             canActivate = true;
+
     }
 
     //Si el jugador sale de la zona de Trigger ya no puede activar le diálogo
