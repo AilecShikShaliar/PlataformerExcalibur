@@ -744,14 +744,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.759434, g: 1, b: 0.8195755, a: 0.9490196}
+  m_Color: {r: 0.26312745, g: 0.6886792, b: 0.4619129, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d577e9b833ed04c4a8151f8aefdd91ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7339bde5bb2e1c44fa4411112e3fe788, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1558,8 +1558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 259, y: -124}
-  m_SizeDelta: {x: 200, y: -1091}
+  m_AnchoredPosition: {x: 437, y: -126.11188}
+  m_SizeDelta: {x: 253.3287, y: -1066.1133}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &919853079
 MonoBehaviour:
@@ -1590,8 +1590,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278784257
-  m_fontColor: {r: 0.0046724794, g: 0.066037714, b: 0.034689624, a: 1}
+    rgba: 4288213920
+  m_fontColor: {r: 0.629052, g: 0.9528302, b: 0.5977661, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1608,12 +1608,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
+  m_fontSize: 53.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 10
+  m_fontSizeMax: 90
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -4258,11 +4258,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n-CP
-  - hola buenas
   - n-Player
-  - macarrones
-  theNpcSprite: {fileID: 21300000, guid: 6fbefdf68d1d31c49a42370835703f95, type: 3}
+  - ...
+  - n-CP
+  - ...
+  - n-Player
+  - que mal rollo...
+  theNpcSprite: {fileID: 858039364, guid: 1c51c9249e263724cbbaeba735ae21e3, type: 3}
 --- !u!1 &1158933395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,7 +4489,7 @@ GameObject:
   - component: {fileID: 1327208239}
   - component: {fileID: 1327208238}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8738,7 +8740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fbefdf68d1d31c49a42370835703f95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98998401378d5ac449a57a0169d75f11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9283,7 +9285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9113166389096626151, guid: 7b06f80e0999b6d4c8a7c1a08a66b0f7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9305,7 +9307,7 @@ PrefabInstance:
     - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: thePlayerSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0d1fd70ca2c1f18449b8ac656aedf874, type: 3}
+      objectReference: {fileID: 21300000, guid: 98998401378d5ac449a57a0169d75f11, type: 3}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name
       value: Player
