@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        _lastPos = transform.position;
+        target = FindObjectOfType<PlayerController>().transform;
     }
 
 

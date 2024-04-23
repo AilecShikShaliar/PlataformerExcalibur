@@ -12,7 +12,7 @@ public class PlayerLoader : MonoBehaviour
     void Start()
     {
         if (PlayerController.instance == null)
-        Instantiate(Player, initialPosition, transform.rotation);
+        Instantiate(Player, initialPosition, transform.rotation); 
 
         else
         Destroy(gameObject);
