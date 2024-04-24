@@ -8,24 +8,22 @@ public class PasilloChangeLevel : MonoBehaviour
     public int Scene;
      
     public GameObject infoPanel;
-    
+
+    public bool pasillo = false;
 
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void Update()
     {
-        if(collider.CompareTag ("Player"))
-        {
-
-           if(Input.GetKeyDown(KeyCode.Return)) StartCoroutine(GameObject.Find("LevelManager").GetComponent<LevelManager>().ExitLevelCo(Scene));
-            Debug.Log("pasarPasillo");
-        }
+        if (pasillo == true)
+            if (Input.GetKeyDown(KeyCode.F)) StartCoroutine(GameObject.Find("LevelManager").GetComponent<LevelManager>().ExitLevelCo(Scene));
+              Debug.Log("pasarPasillo");
     }
 
        private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            
+            pasillo = true;
             infoPanel.SetActive(true);
         
         }
@@ -35,7 +33,7 @@ public class PasilloChangeLevel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-           
+            pasillo = false;
             infoPanel.SetActive(false);
 
         }

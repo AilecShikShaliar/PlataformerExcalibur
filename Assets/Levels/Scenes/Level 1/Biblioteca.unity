@@ -1449,7 +1449,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1832623516444292322, guid: d0f9a2408732b6c4da7b5fdeb07e5c48, type: 3}
       propertyPath: m_Name
-      value: LSCanvas 1
+      value: LSCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 1832623516444292322, guid: d0f9a2408732b6c4da7b5fdeb07e5c48, type: 3}
       propertyPath: m_IsActive
@@ -4704,6 +4704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene: 4
   infoPanel: {fileID: 621335667}
+  pasillo: 0
 --- !u!61 &1529479649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4736,7 +4737,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8550854, y: 0.8445339}
+  m_Offset: {x: -0.8550854, y: 3.337884}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4747,7 +4748,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.493786, y: 14.343433}
+  m_Size: {x: 21.493786, y: 19.330133}
   m_EdgeRadius: 0
 --- !u!1 &1548083521
 GameObject:
@@ -5595,7 +5596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1156198406123507842, guid: f7b0828523439654ab5ada41fcaf62d7, type: 3}
       propertyPath: initialPosition.x
-      value: 0
+      value: 85.5
       objectReference: {fileID: 0}
     - target: {fileID: 1156198406123507842, guid: f7b0828523439654ab5ada41fcaf62d7, type: 3}
       propertyPath: initialPosition.y
