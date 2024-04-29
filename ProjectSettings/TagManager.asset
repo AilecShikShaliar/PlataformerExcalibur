@@ -58,9 +58,12 @@ TagManager:
   - name: player
     uniqueID: 3918561325
     locked: 0
-  - name: efectos
-    uniqueID: 2711868865
+  - name: escaleras
+    uniqueID: 1628825941
     locked: 0
   - name: elementos
     uniqueID: 1038995831
+    locked: 0
+  - name: efectos
+    uniqueID: 2711868865
     locked: 0
