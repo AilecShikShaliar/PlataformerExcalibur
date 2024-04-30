@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
     public string areaTransitionName;
 
+    
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -125,8 +127,7 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-
-      
+        
 
 
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
