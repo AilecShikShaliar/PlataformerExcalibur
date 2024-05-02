@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 115076900}
   - component: {fileID: 115076899}
   - component: {fileID: 115076898}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (3)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -999,7 +999,7 @@ GameObject:
   - component: {fileID: 151704061}
   - component: {fileID: 151704060}
   - component: {fileID: 151704059}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (2)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 235252954}
   - component: {fileID: 235252953}
   - component: {fileID: 235252952}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -3147,7 +3147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425332343}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Caminos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3355,7 +3355,7 @@ GameObject:
   - component: {fileID: 521039596}
   - component: {fileID: 521039595}
   - component: {fileID: 521039594}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -6007,7 +6007,7 @@ GameObject:
   - component: {fileID: 633573652}
   - component: {fileID: 633573651}
   - component: {fileID: 633573650}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (1)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -6517,6 +6517,10 @@ PrefabInstance:
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 11400000, guid: 13dc4e9f402aa6a438ec74b73710cd74, type: 2}
+    - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: whatIsGraund.m_Bits
+      value: 192
+      objectReference: {fileID: 0}
     - target: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: dashForce
       value: 100
@@ -6791,7 +6795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &854440400
 Transform:
   m_ObjectHideFlags: 0
@@ -7493,7 +7497,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06168723, y: -4.631349}
+  m_Offset: {x: 0.06168723, y: -4.826027}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7504,7 +7508,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.607391, y: 1.0577326}
+  m_Size: {x: 4.607391, y: 0.6683769}
   m_EdgeRadius: 0
 --- !u!1 &1050114348
 GameObject:
@@ -7624,7 +7628,7 @@ GameObject:
   - component: {fileID: 1148453972}
   - component: {fileID: 1148453971}
   - component: {fileID: 1148453970}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (3)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -9909,7 +9913,7 @@ GameObject:
   - component: {fileID: 1246521845}
   - component: {fileID: 1246521846}
   - component: {fileID: 1246521847}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: libros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15279,7 +15283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467932890}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Caminos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15319,7 +15323,7 @@ GameObject:
   - component: {fileID: 1519954848}
   - component: {fileID: 1519954847}
   - component: {fileID: 1519954846}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (2)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -15985,7 +15989,7 @@ Transform:
   m_GameObject: {fileID: 1583239836}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.5, y: 12.53, z: 0}
+  m_LocalPosition: {x: 51.4, y: 12.53, z: 0}
   m_LocalScale: {x: 2.8929815, y: 2.8929815, z: 2.8929815}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16025,7 +16029,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.044018745, y: 0}
+  m_Offset: {x: -0.024937272, y: 0.5969715}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16036,7 +16040,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7082987, y: 10.6}
+  m_Size: {x: 4.422866, y: 9.406057}
   m_EdgeRadius: 0
 --- !u!212 &1583239840
 SpriteRenderer:
@@ -16080,7 +16084,7 @@ SpriteRenderer:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 1480466249, guid: 881399128b968dc438a8ac8df5422341, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8349056, b: 0.8349056, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16274,7 +16278,7 @@ GameObject:
   - component: {fileID: 1608842504}
   - component: {fileID: 1608842503}
   - component: {fileID: 1608842502}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -16666,6 +16670,10 @@ PrefabInstance:
       propertyPath: _pCref
       value: 
       objectReference: {fileID: 1851134099}
+    - target: {fileID: 5973779618277756370, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19164,7 +19172,7 @@ GameObject:
   - component: {fileID: 1793277655}
   - component: {fileID: 1793277654}
   - component: {fileID: 1793277653}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (1)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -19539,7 +19547,7 @@ GameObject:
   - component: {fileID: 1831155796}
   - component: {fileID: 1831155795}
   - component: {fileID: 1831155794}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (1)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -19877,16 +19885,22 @@ GameObject:
   - component: {fileID: 1848286298}
   - component: {fileID: 1848286299}
   - component: {fileID: 1848286308}
+  - component: {fileID: 1848286307}
   - component: {fileID: 1848286305}
   - component: {fileID: 1848286306}
-  - component: {fileID: 1848286307}
+  - component: {fileID: 1848286310}
+  - component: {fileID: 1848286309}
+  - component: {fileID: 1848286313}
+  - component: {fileID: 1848286312}
+  - component: {fileID: 1848286311}
+  - component: {fileID: 1848286314}
   m_Layer: 7
   m_Name: collaider (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1848286298
 Transform:
   m_ObjectHideFlags: 0
@@ -19981,7 +19995,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848286297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -20052,6 +20066,252 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.2041476, y: -2.3726134}
   - {x: 0.95593756, y: -2.3436732}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286309
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.128468, y: -0.13883263}
+  - {x: 0.78360283, y: -0.14121628}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286310
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.1879754, y: -1.2297968}
+  - {x: 0.8034386, y: -1.2321805}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286311
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2349057, y: 3.1759355}
+  - {x: 0.768398, y: 3.143141}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286312
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2501106, y: 4.1186676}
+  - {x: 0.7227822, y: 4.1619}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286313
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.1791843, y: 0.984787}
+  - {x: 0.7493177, y: 1.0008262}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1848286314
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848286297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2653154, y: 2.0811498}
+  - {x: 0.78360283, y: 2.0939715}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -20975,7 +21235,7 @@ GameObject:
   - component: {fileID: 1934082928}
   - component: {fileID: 1934082927}
   - component: {fileID: 1934082926}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (2)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -23069,7 +23329,7 @@ GameObject:
   - component: {fileID: 2051427271}
   - component: {fileID: 2051427270}
   - component: {fileID: 2051427269}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: caminos (3)
   m_TagString: plataforma
   m_Icon: {fileID: 0}
@@ -23405,7 +23665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2075967454}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Caminos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

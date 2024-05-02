@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour
     private PuertaMenu _pMenu;
     //SALIR DEL NIVEL
     public string levelToLoad;
-
+    
     private LSUIController _lSUIController;
 
     private void Start()
@@ -25,6 +25,7 @@ public class LevelManager : MonoBehaviour
         _pCReference = GameObject.Find("Player").GetComponent<PlayerController>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
+        
         //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
         
