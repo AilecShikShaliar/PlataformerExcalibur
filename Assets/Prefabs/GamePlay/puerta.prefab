@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 0}
-  levelToLoad: 0
+  levelToLoad: 5
 --- !u!1 &8946019580516031289
 GameObject:
   m_ObjectHideFlags: 0

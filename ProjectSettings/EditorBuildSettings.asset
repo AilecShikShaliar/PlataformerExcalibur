@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/Scenes/MainMenu.unity
+    path: Assets/Levels/Scenes/Menu/MainMenu.unity
     guid: cefb86125506fc240881e45d16f3abb8
   - enabled: 1
-    path: Assets/Levels/Scenes/Nexo.unity
+    path: Assets/Levels/Scenes/Menu/Nexo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Levels/Scenes/Level 1/Entrada.unity
@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/Level 1/Estanterias.unity
     guid: 65b2c2cff71232e499d6d4d1b479f454
   - enabled: 1
-    path: "Assets/Levels/Scenes/habitaci\xF3n.unity"
-    guid: 442e33c0d3b26b846a666fc4ceaa9a56
+    path: Assets/Levels/Scenes/Level 1/SaladeLectura.unity
+    guid: 83788fe8cca7f974f93e57128e47e0e8
   m_configObjects: {}

@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     //Referencia a las Layer del suelo
     public LayerMask whatIsGraund;
     //correr
-    private bool _canRun;
+    public bool canRun;
     //Fuerza de rebote del jugador
     public float bounceForce;
 
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-                _canRun = true;
+                canRun = true;
                 theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed * runMode, theRB.velocity.y);
 
                 if (Input.GetKey(KeyCode.LeftShift))
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
             {
                 _anim.SetFloat("moveSpeed", 0f);
                 _anim.SetBool("canMove", false);
-                _canRun = false;
+                canRun = false;
             }
             actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
             //BOTON DE SALTO

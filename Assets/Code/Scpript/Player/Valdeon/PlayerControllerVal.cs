@@ -8,7 +8,7 @@ public class PlayerControllerVal : MonoBehaviour
     
     private bool _canDubleJump;
 
-    //private Rigidbody2D _theRB;
+    private Rigidbody2D _theRB;
 
     private bool _dashMove;
 
