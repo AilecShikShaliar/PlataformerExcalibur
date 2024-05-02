@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     //El sprite del NPC
     private Sprite sNpc;
     private PlayerController _pCreference;
+    public Sprite[] spritesExprexions;
 
     //Hacemos una referencia (Singleton)
     public static DialogueManager instance;

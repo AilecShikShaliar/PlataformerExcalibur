@@ -25,7 +25,6 @@ public class LevelManager : MonoBehaviour
         if (FindObjectOfType<PlayerController>()) _pCReference = FindObjectOfType<PlayerController>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
-        
         //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
         
