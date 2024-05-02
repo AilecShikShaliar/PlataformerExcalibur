@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
     {
         //Inicializamos las refs
         _lSUIController = GameObject.Find("LSCanvas").GetComponent<LSUIController>();
-        _pCReference = GameObject.Find("Player").GetComponent<PlayerController>();
+        if (FindObjectOfType<PlayerController>()) _pCReference = FindObjectOfType<PlayerController>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
         

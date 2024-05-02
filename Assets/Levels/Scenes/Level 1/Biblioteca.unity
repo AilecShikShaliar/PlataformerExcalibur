@@ -5341,18 +5341,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
-      propertyPath: levelToLoad
-      value: Estanterias
-      objectReference: {fileID: 0}
-    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
-      propertyPath: waitToRespawn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2939568188085150946, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
-      propertyPath: _pCref
-      value: 
-      objectReference: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
     - target: {fileID: 2939568188085150946, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: MenuPausa
       value: 
@@ -5397,10 +5385,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5973779618277756370, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
-      propertyPath: _pCref
-      value: 
-      objectReference: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
     - target: {fileID: 5973779618277756370, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: MenuPuerta
       value: 

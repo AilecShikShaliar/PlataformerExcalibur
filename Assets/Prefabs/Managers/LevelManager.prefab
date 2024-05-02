@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18137ef9acf921946be3a197c7c1fe2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToRespawn: 0
-  levelToLoad: Biblioteca
+  waitToRespawn: 1
+  levelToLoad: Estanterias
 --- !u!114 &2939568188085150946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuPausa: {fileID: 0}
-  _pCref: {fileID: 0}
+  _pCref: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
 --- !u!114 &5973779618277756370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,4 +75,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuPuerta: {fileID: 0}
-  _pCref: {fileID: 0}
+  _pCref: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
