@@ -34,7 +34,7 @@ public class Puerta : MonoBehaviour
     {
         
         _lReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-        _PCRef = GameObject.Find("Player").GetComponent<PlayerController>();
+       
         _puertaM = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
 
     }
@@ -42,7 +42,7 @@ public class Puerta : MonoBehaviour
     void Start()
     {
         puertaanim = GetComponent<Animator>();
-
+        if (FindObjectOfType<PlayerController>()) _PCRef = FindObjectOfType<PlayerController>();
         _sR = GetComponent<SpriteRenderer>();
 
        

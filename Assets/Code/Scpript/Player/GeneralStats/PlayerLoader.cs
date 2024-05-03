@@ -17,6 +17,7 @@ public class PlayerLoader : MonoBehaviour
         {
             Instantiate(Player, initialPosition, transform.rotation);
             FindObjectOfType<CameraController>().LoadPlayer();
+            Debug.Log("hola");
         }
 
 

@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        target = FindObjectOfType<PlayerController>().transform;
+        if (FindObjectOfType<PlayerController>()) target = FindObjectOfType<PlayerController>().transform;
     }
 
 

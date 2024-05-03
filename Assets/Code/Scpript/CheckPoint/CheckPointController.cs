@@ -18,9 +18,10 @@ public class CheckpointController : MonoBehaviour
     {
         //Buscamos todos los GameObjects que tengan el script asociado Checkpoint y los guardamos en nuestro array
         _checkpoints = GetComponentsInChildren<Checkpoint>();
-
+       
+       if (FindObjectOfType<PlayerController>()) spawnPoint = FindObjectOfType<PlayerController>().transform.position;
         //pso inicial de l jugador por si no hemos guardado ningun cp
-        spawnPoint = GameObject.Find("Player").transform.position;
+
     }
 
 

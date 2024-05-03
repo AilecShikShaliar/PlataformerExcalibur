@@ -14,7 +14,7 @@ public class PushableObject : MonoBehaviour
         isMovable = false;
         canPush = false; 
         _rb = GetComponent<Rigidbody2D>();
-        _pCref = GameObject.Find("Player").GetComponent<PlayerController>();
+        if (FindObjectOfType<PlayerController>()) _pCref = FindObjectOfType<PlayerController>();
     }
 
     private void Update()
