@@ -12,6 +12,7 @@ public class puertainterect : MonoBehaviour
     private PlayerController _PCRef;
     private SpriteRenderer _sR;
     private LevelManager _lReference;
+    public static puertainterect instance;
 
     // Start is called before the first frame update
     void Start()
@@ -24,23 +25,32 @@ public class puertainterect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
         if (Input.GetKeyDown(KeyCode.F) && _canopendoor == true)
 
         {
-            puertaanim.SetTrigger("openDoor");
-            _iHaveKey = true;
+            
+            if (_iHaveKey == true)
+            {
+                puertaanim.SetTrigger("openDoor");
+                //SceneManager.LoadScene();
+            }
 
 
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             _canopendoor = true;
-           
 
+            _iHaveKey = FindObjectOfType<inventario>().Key;
         }
 
     }

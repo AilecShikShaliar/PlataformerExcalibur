@@ -25,7 +25,7 @@ public class DialogActivator : MonoBehaviour
         {
 
             DialogueManager.instance.ShowDialog(lines, theNpcSprite);
-            GameObject.Find("Player").GetComponent<PlayerController>().canMove = false;
+            FindObjectOfType<PlayerController>().canMove = false;
         }
     }
 

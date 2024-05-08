@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     //El sprite del NPC
     private Sprite sNpc;
     private PlayerController _pCreference;
-    public Sprite[] spritesExprexions;
+    //public Sprite[] spritesExprexions;
 
     //Hacemos una referencia (Singleton)
     public static DialogueManager instance;
@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _pCreference = GameObject.Find("Player").GetComponent<PlayerController>();
+        _pCreference = FindObjectOfType<PlayerController>();
     }
 
     // Update is called once per frame

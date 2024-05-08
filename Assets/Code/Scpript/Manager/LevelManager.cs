@@ -10,11 +10,12 @@ public class LevelManager : MonoBehaviour
     //Refs
     private PlayerController _pCReference;
     private CheckpointController _cReference;
-    //private UIController _uIReference;
+    private UIController _uIReference;
     private PlayerHealthController _pHReference;
     private PuertaMenu _pMenu;
     //SALIR DEL NIVEL
     public string levelToLoad;
+    public int keycollected;
     
     private LSUIController _lSUIController;
 
@@ -25,7 +26,7 @@ public class LevelManager : MonoBehaviour
         if (FindObjectOfType<PlayerController>()) _pCReference = FindObjectOfType<PlayerController>();
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
-        //_uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
+        _uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
         
     }
