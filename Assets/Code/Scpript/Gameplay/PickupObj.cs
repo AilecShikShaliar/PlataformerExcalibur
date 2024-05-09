@@ -28,9 +28,24 @@ public class PickupObj : MonoBehaviour
         _lMReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !_isCollected)
+        {
+            print("toco la llave");
+            _canCollect = true;
 
+            if (isGem && _canCollect == true)
+            {
+                _lMReference.keycollected++;
+                //_uIReference.UpdateCurrency();
+                _isCollected = true;
+                Destroy(gameObject);
+            }
+            else { _isCollected = false; }
+        }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !_isCollected && Input.GetKey(KeyCode.F))
         {
@@ -60,6 +75,6 @@ public class PickupObj : MonoBehaviour
             //{
                 //_canCollect = false;
             //}
-        }
+        }*/
     }
 }

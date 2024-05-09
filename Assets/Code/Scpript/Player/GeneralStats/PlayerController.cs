@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     public float bounceForce;
 
     public bool canMove = true;
+    //Temporizador sin Input
+    public float noMoveLength;
+    private float noMoveCount;
 
     //EjeXY
     public bool isLookingRight;
@@ -32,7 +35,7 @@ public class PlayerController : MonoBehaviour
     //RB del jugador
     public Rigidbody2D theRB;
     //Referencia al Animator
-    private Animator _anim;
+    public Animator anim;
     //Referencia al SpriteRenderer
     private SpriteRenderer _theSR;
     //Velocidad al correr
@@ -43,6 +46,9 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     public string areaTransitionName;
+
+    public bool changed;
+    public Vector2 initialPosition;
 
     
 
@@ -60,7 +66,7 @@ public class PlayerController : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
 
         //Animator del jugador 
-        _anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         //SpriteRendered del jugador
         _theSR = GetComponent<SpriteRenderer>();
@@ -72,8 +78,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null && !changed)
+        {
+            if (player.transform.position.x != initialPosition.x)
+            {
+                changed = true;
+                player.transform.position = initialPosition;
+            }
+        }
         //BOTÓN DE CORRER
-        if(canMove)
+        if (canMove)
         {
             isGrounded = Physics2D.OverlapCircle(graundCheckPoint.position, .2f, whatIsGraund);
 
@@ -95,22 +110,22 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
 
-                    _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
-                    _anim.SetBool("canMove", true);
+                    anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                    anim.SetBool("canMove", true);
                     runMode = 2f;
                 }
                 else
                 {
                     runMode = 1f;
-                    _anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
-                    _anim.SetBool("canMove", false);
+                    anim.SetFloat("moveSpeed", (Input.GetAxisRaw("Horizontal") * moveSpeed));
+                    anim.SetBool("canMove", false);
 
                 }
             }
             else
             {
-                _anim.SetFloat("moveSpeed", 0f);
-                _anim.SetBool("canMove", false);
+                anim.SetFloat("moveSpeed", 0f);
+                anim.SetBool("canMove", false);
                 canRun = false;
             }
             actualSpeed = Input.GetAxisRaw("Horizontal") * moveSpeed * runMode;
@@ -133,8 +148,8 @@ public class PlayerController : MonoBehaviour
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
 
 
-        _anim.SetBool("LookingRight", isLookingRight);
-        _anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("LookingRight", isLookingRight);
+        anim.SetBool("isGrounded", isGrounded);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -149,6 +164,13 @@ public class PlayerController : MonoBehaviour
 
         }
         else isGrounded = false;
+    }
+    public void InitializeNoInput()
+    {
+        //Inicializamos el contador de no Input
+        noMoveCount = noMoveLength;
+        //Paramos al jugador
+        theRB.velocity = Vector2.zero;
     }
 
 }

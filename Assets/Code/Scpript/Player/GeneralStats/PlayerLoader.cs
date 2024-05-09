@@ -8,6 +8,7 @@ public class PlayerLoader : MonoBehaviour
 
     public Vector2 initialPosition;
 
+    public bool changed = false;
     
 
     // Start is called before the first frame update
@@ -15,7 +16,8 @@ public class PlayerLoader : MonoBehaviour
     {
         if (PlayerController.instance == null)
         {
-            Instantiate(Player, initialPosition, transform.rotation);
+            GameObject player = Instantiate(Player, initialPosition, transform.rotation);
+            print(player.transform.position);
             FindObjectOfType<CameraController>().LoadPlayer();
             Debug.Log("hola");
         }
@@ -29,6 +31,6 @@ public class PlayerLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
