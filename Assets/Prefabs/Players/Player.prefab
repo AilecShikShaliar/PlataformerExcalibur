@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -376405971
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_Sprite: {fileID: -1022746155, guid: cc9d6cab73b3ce84da995fc1918c180f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,12 +113,16 @@ MonoBehaviour:
   canRun: 0
   bounceForce: 13
   canMove: 1
+  noMoveLength: 0
   isLookingRight: 0
   _canInteracrt: 0
   theRB: {fileID: 0}
+  anim: {fileID: 0}
   actualSpeed: 0
   thePlayerSprite: {fileID: 21300000, guid: 98998401378d5ac449a57a0169d75f11, type: 3}
   areaTransitionName: 
+  changed: 0
+  initialPosition: {x: 0, y: 0}
 --- !u!114 &5634494284382611024
 MonoBehaviour:
   m_ObjectHideFlags: 0
