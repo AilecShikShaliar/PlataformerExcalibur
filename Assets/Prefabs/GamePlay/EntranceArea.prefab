@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2208412708540305854, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
       propertyPath: m_Name
-      value: EntranceAreaUpDown  Variant
+      value: EntranceArea
       objectReference: {fileID: 0}
     - target: {fileID: 8947555630727912806, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -88,5 +88,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionName: 
+  savedTransitionName: 
   dirX: 0
-  dirY: 0

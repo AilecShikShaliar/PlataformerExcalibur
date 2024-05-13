@@ -5658,12 +5658,20 @@ PrefabInstance:
       value: 2.7315972
       objectReference: {fileID: 0}
     - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
+      propertyPath: dirX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
       propertyPath: infoPanel
       value: 
       objectReference: {fileID: 1548312035}
     - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
       propertyPath: levelToLoad
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
+      propertyPath: transitionName
+      value: Biblioteca
       objectReference: {fileID: 0}
     - target: {fileID: 7427779839791143175, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
       propertyPath: m_Name

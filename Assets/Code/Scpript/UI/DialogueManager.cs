@@ -124,5 +124,36 @@ public class DialogueManager : MonoBehaviour
             //Salto a la siguiente línea de diálogo
             currentLine++;
         }
+        //Si la línea empieza por e-
+        /*else if (dialogLines[currentLine].StartsWith("e-"))
+        {
+           //Sacariamos en una variable lo que sigue a la e-, por ejemplo happy, sad...Expresion
+
+            //Si es distinto de los nombres de los personajes principales
+            if (charName != "Player")
+            {
+                if(//expresion == happy)
+                {
+                    //me iria al array y pondria la posicion 1
+                    //theSNpc = array[1]
+                }
+                else if(expresion == sad)
+                {
+                    //me iria al array y pondria la posicion 2
+                    //theSNpc = array[2]
+                }
+                //Ponemos el sprite del npc en concreto
+                //portrait.sprite = theSNpc;
+            }*/
+                
+            //Si es el nombre de un personaje principal
+            else
+            { 
+                //Ponemos el sprite de ese personaje
+                portrait.sprite = _pCreference.thePlayerSprite;
+
+            //Salto a la siguiente línea de diálogo
+            currentLine++;
+            }
     }
 }

@@ -595,7 +595,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: initialPosition.x
-      value: 90
+      value: 90.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: areaTransitionName
+      value: Biblioteca
       objectReference: {fileID: 0}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name
@@ -603,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.45
+      value: 90.5
       objectReference: {fileID: 0}
     - target: {fileID: 7849078135258557367, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3829,7 +3833,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: -0.55, z: 0}
-  m_LocalScale: {x: 1, y: 1.16, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.4354999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1137855984}
@@ -5576,7 +5580,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 6.31, z: 0}
-  m_LocalScale: {x: 7.4, y: 2.03, z: 1}
+  m_LocalScale: {x: 7.4, y: 3.2613218, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1701234790}
@@ -6255,16 +6259,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1321511462}
     m_Modifications:
     - target: {fileID: 1251343632811951315, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
-      propertyPath: sceneToLoad
-      value: Biblioteca
-      objectReference: {fileID: 0}
-    - target: {fileID: 1251343632811951315, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
-      propertyPath: areTrasicionName
-      value: Entrada
+      propertyPath: areaTransitionName
+      value: Biblioteca-1
       objectReference: {fileID: 0}
     - target: {fileID: 2208412708540305854, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
       propertyPath: m_Name
-      value: ExitAreaUpDown
+      value: ExitArea1
       objectReference: {fileID: 0}
     - target: {fileID: 8947555630727912806, guid: 5e65b3fc2c8d13642a92de061117d3ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6325,15 +6325,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5008410733173088834, guid: a60904c7ba8cd4b408d3529bd57b9da9, type: 3}
       propertyPath: dirX
-      value: -94.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5008410733173088834, guid: a60904c7ba8cd4b408d3529bd57b9da9, type: 3}
       propertyPath: transitionName
       value: Entrada
       objectReference: {fileID: 0}
+    - target: {fileID: 5008410733173088834, guid: a60904c7ba8cd4b408d3529bd57b9da9, type: 3}
+      propertyPath: savedTransitionName
+      value: Biblioteca-1
+      objectReference: {fileID: 0}
     - target: {fileID: 8245433589560498956, guid: a60904c7ba8cd4b408d3529bd57b9da9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -85.5
       objectReference: {fileID: 0}
     - target: {fileID: 8245433589560498956, guid: a60904c7ba8cd4b408d3529bd57b9da9, type: 3}
       propertyPath: m_LocalPosition.y

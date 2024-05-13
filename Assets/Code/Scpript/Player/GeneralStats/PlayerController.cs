@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
     public string areaTransitionName;
 
     public bool changed;
-    public Vector2 initialPosition;
+    //public Vector2 initialPosition;
 
     
 
@@ -79,14 +79,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         GameObject player = GameObject.FindWithTag("Player");
-        if (player != null && !changed)
+        /*if (player != null && !changed)
         {
             if (player.transform.position.x != initialPosition.x)
             {
                 changed = true;
                 player.transform.position = initialPosition;
             }
-        }
+        }*/
         //BOTÓN DE CORRER
         if (canMove)
         {
