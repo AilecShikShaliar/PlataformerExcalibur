@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9146697637765528515}
   - component: {fileID: 2200159535868441657}
   - component: {fileID: 5634494284382611024}
+  - component: {fileID: 6374813634638427588}
   - component: {fileID: 7439335395271101991}
   - component: {fileID: 3681739667680931885}
   - component: {fileID: 2198717778425540906}
@@ -120,7 +121,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   actualSpeed: 0
   thePlayerSprite: {fileID: 21300000, guid: 98998401378d5ac449a57a0169d75f11, type: 3}
-  areaTransitionName: 
+  areaTransitionName: Entrada
   changed: 0
 --- !u!114 &5634494284382611024
 MonoBehaviour:
@@ -135,6 +136,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashForce: 90
+--- !u!114 &6374813634638427588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754894019366281501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4201b045512785c478a36379c253b4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 5
+  maximoVida: 1
+  _lifeBar: {fileID: 0}
 --- !u!50 &7439335395271101991
 Rigidbody2D:
   serializedVersion: 4

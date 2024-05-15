@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     private PlayerController _pCReference;
     private CheckpointController _cReference;
     private UIController _uIReference;
-    private PlayerHealthController _pHReference;
+    private PlayerHealth _pHReference;
     private PuertaMenu _pMenu;
     //SALIR DEL NIVEL
     public string levelToLoad;

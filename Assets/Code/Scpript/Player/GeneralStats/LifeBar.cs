@@ -6,26 +6,31 @@ using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
    
 {
+    [SerializeField]public float currentHealth;
+    public const float MAXHP = 100.0f;
     private Slider slider;
-
     private void Start()
     {
         slider = GetComponent<Slider>();
-    }
-    
-    public void CambiarVidaMaxima (float vidaMaxima)
-    {
-        slider.maxValue = vidaMaxima;
+        
     }
 
-    public void CambiarVidaActual(float cantidadVida)
+    private void Update()
     {
-        slider.value = cantidadVida;
+        slider.value = currentHealth / MAXHP*100;
+    }
+    public void SumarVida(float cantidadVida)
+    {
+        currentHealth += cantidadVida;
+    }
+
+    public void RestarVida(float cantidadVida)
+    {
+        currentHealth -= cantidadVida;
     }
 
     public void InicializarBarraDeVida (float cantidadVida)
     {
-        CambiarVidaMaxima(cantidadVida);
-        CambiarVidaActual(cantidadVida);
+        currentHealth = cantidadVida;
     }
 }
