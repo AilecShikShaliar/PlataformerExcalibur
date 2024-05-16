@@ -67,7 +67,7 @@ public class MainMenu : MonoBehaviour
     public IEnumerator ExitLevelCo(int Scene)
     {
         lSUIController.FadeToBlack();
-
+        PlayerPrefs.SetInt("BookCollected", 0);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(Scene);
 

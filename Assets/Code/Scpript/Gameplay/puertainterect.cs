@@ -20,48 +20,35 @@ public class puertainterect : MonoBehaviour
         puertaanim = GetComponent<Animator>();
         if (FindObjectOfType<PlayerController>()) _PCRef = FindObjectOfType<PlayerController>();
         _sR = GetComponent<SpriteRenderer>();
+        _lReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-       
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-
-        if (Input.GetKeyDown(KeyCode.F) && _canopendoor == true)
-
+        if (Input.GetKeyDown(KeyCode.F) && _canopendoor && _iHaveKey)
         {
-            
-            if (_iHaveKey == true)
-            {
-                puertaanim.SetTrigger("openDoor");
-                //SceneManager.LoadScene();
-            }
-
-
+            puertaanim.SetTrigger("openDoor");
+            LoadLevel(1);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             _canopendoor = true;
 
-            _iHaveKey = FindObjectOfType<inventario>().Key;
+            if(_lReference.keycollected > 0)
+            {
+                _lReference.keycollected--;
+                _iHaveKey = true;
+            }
         }
-
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        {
             _canopendoor = false;
-            
-
-        }
     }
 
     public void LoadLevel(int n)

@@ -5,20 +5,13 @@ using UnityEngine;
 public class PickupObj : MonoBehaviour
 {
 
-    public bool isGem, isHeal;
+    public bool isKey;
     private bool _isCollected;
-
-
-
-
-    //Referencia al LevelManager
     private LevelManager _lMReference;
     //Referencian al UIController
     private UIController _uIReference;
-    //Referencia al PlayerHealthController
-    //private PlayerHealthController _pHReference;
     private bool _canCollect = false;
-
+    private BooksPickUp _BPU;
     private void Start()
     {
         //Inicializamos la referencia al UIController
@@ -26,55 +19,38 @@ public class PickupObj : MonoBehaviour
         //Inicializamos la referencia al PlayerHealthController
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
         _lMReference = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        
     }
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other.CompareTag("Player") && !_isCollected)
+        if (_canCollect && Input.GetKeyDown(KeyCode.F))
         {
-            print("toco la llave");
-            _canCollect = true;
-
-            if (isGem && _canCollect == true)
-            {
-                _lMReference.keycollected++;
-                //_uIReference.UpdateCurrency();
-                _isCollected = true;
-                Destroy(gameObject);
-            }
-            else { _isCollected = false; }
+            _lMReference.keycollected++;
+            Destroy(gameObject);
+         
         }
-
-    /*private void OnTriggerStay2D(Collider2D collision)
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !_isCollected && Input.GetKey(KeyCode.F))
+
+        if (collision.CompareTag("Player") && !_isCollected)
         {
+            print("toco el llave");
             _canCollect = true;
+            
 
-            if (isGem && _canCollect == true)
-            {
-                _lMReference.keycollected++;
-                //_uIReference.UpdateCurrency();
-                _isCollected = true;
-                Destroy(gameObject);
-            }
-            else { _isCollected = false; }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
 
-            //if (isHeal && _canCollect == true)
-            //{
-                //if (_pHReference.currentHealth != _pHReference.maxHealth)
-                //{
-                    //_pHReference.HealPlayer();
-                    //_isCollected = true;
-                    //Destroy(gameObject);
-                //}
-                //else { _isCollected = false; }
+        if (collision.CompareTag("Player") && !_isCollected)
+        {
+            print("toco el llave");
+            _canCollect = false;
 
-            //}
-            //else
-            //{
-                //_canCollect = false;
-            //}
-        }*/
+
+        }
     }
 }

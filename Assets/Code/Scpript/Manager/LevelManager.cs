@@ -16,6 +16,8 @@ public class LevelManager : MonoBehaviour
     //SALIR DEL NIVEL
     public string levelToLoad;
     public int keycollected;
+    public int bookcollected;
+
     
     private LSUIController _lSUIController;
 
@@ -28,6 +30,8 @@ public class LevelManager : MonoBehaviour
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
         _uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
+         if (PlayerPrefs.HasKey("BookCollected"))
+            bookcollected = PlayerPrefs.GetInt("BookCollected");
         
     }
     
@@ -57,8 +61,11 @@ public class LevelManager : MonoBehaviour
         //Pos de respawm
         _pCReference.transform.position = _cReference.spawnPoint;
         //Vida del jugador al máximo
-       // _pHReference.currentHealth = _pHReference.maxHealth;
-        //Actualizar UI
-        //_uIReference.UpdateHealthDisplay();
+        FindObjectOfType<LifeBar>().InicializarBarraDeVida(100.0f);
     } 
+    public void RecogerLibro ()
+    {
+        bookcollected++;
+        PlayerPrefs.SetInt("BookCollected", bookcollected);
+    }
 }

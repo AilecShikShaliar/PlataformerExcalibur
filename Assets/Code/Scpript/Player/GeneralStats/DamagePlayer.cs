@@ -10,7 +10,7 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().DealWithDamage();
+            FindObjectOfType<LifeBar>().RestarVida(damage);
         }
     }
 }

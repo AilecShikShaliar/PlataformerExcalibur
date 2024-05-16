@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
                 //audio manager, sonido de muerte
 
                 //EFECTO DE MUERTE 
-                GameObject instance = Instantiate(deathEffect, transform.position, transform.rotation); //inicia el efecto de muerte
+                //GameObject instance = Instantiate(deathEffect, transform.position, transform.rotation); //inicia el efecto de muerte
                                                                                                         //donde mira
                 //instance.GetComponent<PlayerDeathEffect>().seeLeft = GetComponent<PlayerController>().seeLeft;
 
@@ -115,23 +115,6 @@ public class PlayerHealth : MonoBehaviour
           
         }
 
-    }
-
-    //MÉTODO PARA CURAR AL JUGADOR
-    public void HealPlayer()
-    {
-        //curamos a vida máxima
-        //currentHealth = maxhealth
-        //+1 vida de jugador
-
-        currentHealth++;
-
-        //si la vida actual es mayor que la máxima
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-           
-        }
     }
 
 }

@@ -9,6 +9,11 @@ public class LifeBar : MonoBehaviour
     [SerializeField]public float currentHealth;
     public const float MAXHP = 100.0f;
     private Slider slider;
+    private LevelManager _lMReference;
+    public bool playerDead = false;
+    //private GameOverMenu _gOMenu;
+    private PlayerController _pCReference;
+
     private void Start()
     {
         slider = GetComponent<Slider>();
@@ -18,6 +23,15 @@ public class LifeBar : MonoBehaviour
     private void Update()
     {
         slider.value = currentHealth / MAXHP*100;
+
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            _lMReference.RespawnPlayer();
+            //_gOMenu.GameOver();
+            playerDead = true;
+            _pCReference.gameObject.SetActive(false);
+        }
     }
     public void SumarVida(float cantidadVida)
     {
