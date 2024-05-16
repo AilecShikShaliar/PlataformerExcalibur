@@ -547,8 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &356016669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1040,8 +1039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1690891484}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &549788519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1157,8 +1155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &575931396
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3625,8 +3622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 109053281}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1015725388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4540,8 +4536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1329916473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4858,8 +4853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1402892518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4980,8 +4974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1449795808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6529,8 +6522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1791082035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6730,8 +6722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &1838734210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8558,8 +8549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaanim: {fileID: 0}
   infoPanel: {fileID: 1099868138}
-  transitionName: 
-  dirX: 0
+  LevelToLoad: 0
 --- !u!61 &2103363815
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9380,6 +9370,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1035630832}
     m_Modifications:
+    - target: {fileID: 80874291517522340, guid: 9e15ad641300fb446a5233940fc6d8e8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 80874291517522340, guid: 9e15ad641300fb446a5233940fc6d8e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 80874291517522340, guid: 9e15ad641300fb446a5233940fc6d8e8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 80874291517522340, guid: 9e15ad641300fb446a5233940fc6d8e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 381
+      objectReference: {fileID: 0}
     - target: {fileID: 2350317637513736315, guid: 9e15ad641300fb446a5233940fc6d8e8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

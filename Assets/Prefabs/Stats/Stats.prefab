@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7894457220443257502}
   - component: {fileID: 8133480972097634896}
+  - component: {fileID: 8259599979014362962}
   m_Layer: 0
   m_Name: life
   m_TagString: Untagged
@@ -83,12 +84,26 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 1
-  m_MaxValue: 5
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 5
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8259599979014362962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398301499706748112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bdc7e756c4de048b72ecfa271c335f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  playerDead: 0
 --- !u!1 &2637604617975471020
 GameObject:
   m_ObjectHideFlags: 0
