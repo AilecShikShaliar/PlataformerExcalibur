@@ -10,23 +10,30 @@ public class DialogActivator : MonoBehaviour
     private bool canActivate;
     //Sprite de diálogo del NPC
     public Sprite theNpcSprite;
+    private Game _gameState;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _gameState = GameObject.Find("Canvas").GetComponent<Game>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Si el jugador puede activar el diálogo y presiona el botón de interacción y la caja de diálogo no está activa en la jerarquía
-        if (canActivate && Input.GetKeyDown(KeyCode.F) && !DialogueManager.instance.dialogBox.activeInHierarchy)
+        //if (canActivate && Input.GetKeyDown(KeyCode.F) && !DialogueManager.instance.dialogBox.activeInHierarchy)
+        //{
+
+        //    DialogueManager.instance.ShowDialog(lines, theNpcSprite);
+        //    FindObjectOfType<PlayerController>().canMove = false;
+        //}
+        if (canActivate && Input.GetKeyDown(KeyCode.F))
         {
 
-            DialogueManager.instance.ShowDialog(lines, theNpcSprite);
             FindObjectOfType<PlayerController>().canMove = false;
         }
+
     }
 
     //Si el jugador entra en la zona de Trigger puede activar el diálogo
@@ -43,4 +50,6 @@ public class DialogActivator : MonoBehaviour
         if (collision.CompareTag("Player"))
             canActivate = false;
     }
+
+    
 }

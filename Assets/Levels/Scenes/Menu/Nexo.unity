@@ -3701,6 +3701,7 @@ GameObject:
   - component: {fileID: 1035630835}
   - component: {fileID: 1035630834}
   - component: {fileID: 1035630833}
+  - component: {fileID: 1035630837}
   - component: {fileID: 1035630836}
   m_Layer: 0
   m_Name: Canvas
@@ -3801,7 +3802,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035630831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b840f62f85108f14f99540ddd1f391e4, type: 3}
   m_Name: 
@@ -3816,6 +3817,23 @@ MonoBehaviour:
   - 
   - 
   currentLine: 0
+  spritesExprexions: []
+--- !u!114 &1035630837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035630831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7bef30931e26a499900dd80af7a43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 919853079}
+  startingState: {fileID: 0}
+  background: {fileID: 1325530411}
+  imagen: {fileID: 2113260115}
 --- !u!1 &1050114348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,6 +4464,11 @@ Transform:
   - {fileID: 1734139201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1325530411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7466451927050690790, guid: f57619d741f081446a35d11ebbb77486, type: 3}
+  m_PrefabInstance: {fileID: 3949091055151018436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325858124
 GameObject:
   m_ObjectHideFlags: 0

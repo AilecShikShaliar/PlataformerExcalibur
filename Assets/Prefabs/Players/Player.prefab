@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9146697637765528515}
   - component: {fileID: 2200159535868441657}
   - component: {fileID: 5634494284382611024}
-  - component: {fileID: 6374813634638427588}
+  - component: {fileID: 3302337990455000558}
   - component: {fileID: 7439335395271101991}
   - component: {fileID: 3681739667680931885}
   - component: {fileID: 2198717778425540906}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashForce: 90
---- !u!114 &6374813634638427588
+--- !u!114 &3302337990455000558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,12 +145,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 6754894019366281501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4201b045512785c478a36379c253b4d9, type: 3}
+  m_Script: {fileID: 11500000, guid: e8a3919da5f7274499d66420039b24ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 5
-  maximoVida: 1
+  vida: 100
+  maximoVida: 100
   _lifeBar: {fileID: 0}
+  currentHealth: 0
+  maxHealth: 0
+  invincibleLength: 0
+  neneqdano: 4
+  deathEffect: {fileID: 0}
+  playerDead: 0
 --- !u!50 &7439335395271101991
 Rigidbody2D:
   serializedVersion: 4

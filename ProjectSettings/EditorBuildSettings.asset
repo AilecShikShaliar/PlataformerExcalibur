@@ -24,6 +24,15 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/Level 1/Est2.unity
     guid: 812c74cd84d71ac458da62d1baba35cd
   - enabled: 1
+    path: Assets/Levels/Scenes/Level 1/Est3.unity
+    guid: cdc0f92c132005944b2137318a0f56a3
+  - enabled: 1
+    path: Assets/Levels/Scenes/Level 1/Est4.unity
+    guid: f36a81d55c48b404a8b39989e9b4a058
+  - enabled: 1
+    path: Assets/Levels/Scenes/Level 1/Est5.unity
+    guid: 07ed0bbb2c293db4a81c523a1da2d4e9
+  - enabled: 1
     path: Assets/Levels/Scenes/Level 1/SaladeLectura.unity
     guid: 83788fe8cca7f974f93e57128e47e0e8
   m_configObjects: {}
