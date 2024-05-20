@@ -5,12 +5,11 @@ using UnityEngine;
 public class DialogActivator : MonoBehaviour
 {
     //Líneas del diálogo
-    public string[] lines;
+    public State stateNew;
     //Para saber si el diálogo se puede activar o no
     private bool canActivate;
-    //Sprite de diálogo del NPC
-    public Sprite theNpcSprite;
     private Game _gameState;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +29,11 @@ public class DialogActivator : MonoBehaviour
         //}
         if (canActivate && Input.GetKeyDown(KeyCode.F))
         {
-
+            _gameState.paneldialog.SetActive(true);
+            CallLoadState();
             FindObjectOfType<PlayerController>().canMove = false;
         }
+        
 
     }
 
@@ -49,6 +50,11 @@ public class DialogActivator : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
             canActivate = false;
+    }
+
+    public void CallLoadState()
+    {
+        GameObject.Find("Canvas").GetComponent<Game>().LoadState(stateNew);
     }
 
     

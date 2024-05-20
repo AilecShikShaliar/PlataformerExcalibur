@@ -15,18 +15,15 @@ public class Game : MonoBehaviour
 
     public GameObject background;
     public Image imagen;
-    
 
-    void Start()
-    {
-
-    }
+    public GameObject paneldialog;
 
     // Update is called once per frame
     void Update()
     {
         
-        ManageStates();
+        if (stateRef != null) ManageStates();
+
     }
 
     
@@ -37,27 +34,26 @@ public class Game : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            stateRef = nextStates[0];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            
-            stateRef = nextStates[1];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-           
-            stateRef = nextStates[2];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            
-            stateRef = nextStates[3];
-        }
-        
-        textComponent.text = stateRef.GetStateStoryText();
 
-        imagen.sprite = stateRef.GetStateImage();
+            if(nextStates.Length > 0)
+            {
+                stateRef = nextStates[0];
+                textComponent.text = stateRef.GetStateStoryText();
+                imagen.sprite = stateRef.GetStateImage();
+            }
+            else
+            {
+                Debug.Log("Holinofunciona");
+                ResetDialog();
+                paneldialog.SetActive(false);
+                FindObjectOfType<PlayerController>().canMove = true;
+
+            }
+
+        }
+
+
+
 
     }
 
@@ -70,5 +66,11 @@ public class Game : MonoBehaviour
         imagen = background.GetComponent<Image>();
 
         imagen.sprite = stateRef.GetStateImage();
+    }
+
+    public void ResetDialog()
+    {
+        stateRef = null;
+        textComponent.text = "";
     }
 }
