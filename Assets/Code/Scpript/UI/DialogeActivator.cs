@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DialogActivator : MonoBehaviour
 {
-    //Líneas del diálogo
+    //Lï¿½neas del diï¿½logo
     public State stateNew;
-    //Para saber si el diálogo se puede activar o no
+    //Para saber si el diï¿½logo se puede activar o no
     private bool canActivate;
     private Game _gameState;
     
@@ -20,7 +20,7 @@ public class DialogActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Si el jugador puede activar el diálogo y presiona el botón de interacción y la caja de diálogo no está activa en la jerarquía
+        //Si el jugador puede activar el diï¿½logo y presiona el botï¿½n de interacciï¿½n y la caja de diï¿½logo no estï¿½ activa en la jerarquï¿½a
         //if (canActivate && Input.GetKeyDown(KeyCode.F) && !DialogueManager.instance.dialogBox.activeInHierarchy)
         //{
 
@@ -37,7 +37,7 @@ public class DialogActivator : MonoBehaviour
 
     }
 
-    //Si el jugador entra en la zona de Trigger puede activar el diálogo
+    //Si el jugador entra en la zona de Trigger puede activar el diï¿½logo
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -45,7 +45,7 @@ public class DialogActivator : MonoBehaviour
 
     }
 
-    //Si el jugador sale de la zona de Trigger ya no puede activar le diálogo
+    //Si el jugador sale de la zona de Trigger ya no puede activar le diï¿½logo
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

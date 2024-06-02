@@ -18,6 +18,10 @@ public class LevelManager : MonoBehaviour
     public int keycollected;
     public int bookcollected;
 
+    private CinematicIntro _cinematicIntro;
+    
+    
+
     
     private LSUIController _lSUIController;
 
@@ -29,9 +33,14 @@ public class LevelManager : MonoBehaviour
         _cReference = GameObject.Find("CheckPointController").GetComponent<CheckpointController>();
         _pMenu = GameObject.Find("LevelManager").GetComponent<PuertaMenu>();
         _uIReference = GameObject.Find("Canvas").GetComponent<UIController>();
+        _cinematicIntro = GameObject.Find("Gameplay") .GetComponent<CinematicIntro>();
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
          if (PlayerPrefs.HasKey("BookCollected"))
             bookcollected = PlayerPrefs.GetInt("BookCollected");
+        
+      
+    
+
         
     }
     
@@ -67,5 +76,7 @@ public class LevelManager : MonoBehaviour
     {
         bookcollected++;
         PlayerPrefs.SetInt("BookCollected", bookcollected);
+        
     }
+    
 }

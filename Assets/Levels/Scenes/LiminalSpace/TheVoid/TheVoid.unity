@@ -833,13 +833,14 @@ GameObject:
   m_Component:
   - component: {fileID: 381472292}
   - component: {fileID: 381472293}
+  - component: {fileID: 381472294}
   m_Layer: 0
-  m_Name: Cinematica
+  m_Name: activatemierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &381472292
 Transform:
   m_ObjectHideFlags: 0
@@ -864,10 +865,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 381472291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e1ecdb5c81327d42b7813c72da0d9a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 41bbf942d3545f54595a9f33e422d522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stateNew: {fileID: 11400000, guid: 28166ced2da26ac40a5b4ff0aacbc0e2, type: 2}
+--- !u!61 &381472294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381472291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -203.59613, y: 2.9268856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.2072144, y: 22.085434}
+  m_EdgeRadius: 0
 --- !u!1 &457051912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1186,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &618072710 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9009814331104226041, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
+  m_PrefabInstance: {fileID: 1556126435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646312554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,37 +1424,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4595055322927627564, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 381472291}
+    - target: {fileID: 4595055322927627564, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: DesactiveDirector
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[2].key
       value: 
-      objectReference: {fileID: -1158123307128518430, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+      objectReference: {fileID: -886794054122597280, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].key
       value: 
-      objectReference: {fileID: -886794054122597280, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[4].key
       value: 
-      objectReference: {fileID: -5531612172502993492, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[5].key
       value: 
-      objectReference: {fileID: -5531612172502993492, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[2].value
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1085917277}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
-      objectReference: {fileID: 1085917277}
+      objectReference: {fileID: 381472291}
     - target: {fileID: 7960426364608325662, guid: 770943e20369f0b43bbcedeb674464c0, type: 3}
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
@@ -1449,6 +1504,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
+    - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: pasos
+      value: 
+      objectReference: {fileID: 618072710}
     - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: startingPosition
       value: 

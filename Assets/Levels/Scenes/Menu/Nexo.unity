@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!82 &23917626 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3449079176314775873, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
-  m_PrefabInstance: {fileID: 9006601188228970460}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &54825589
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
+    - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: pasos
+      value: 
+      objectReference: {fileID: 1169687344}
     - target: {fileID: 6754894019366281501, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1337,11 +1336,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &599111255 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 847226850622994969, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
-  m_PrefabInstance: {fileID: 9006601188228970460}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &674947084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4314,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1169687344 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9009814331104226041, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
+  m_PrefabInstance: {fileID: 9006601188228970460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224635400
 GameObject:
   m_ObjectHideFlags: 0
@@ -9752,21 +9751,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1772853928629027899, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
-      propertyPath: soundsEffects.Array.data[2]
-      value: 
-      objectReference: {fileID: 23917626}
-    - target: {fileID: 1772853928629027899, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
-      propertyPath: soundsEffects.Array.data[3]
-      value: 
-      objectReference: {fileID: 599111255}
     - target: {fileID: 2892151936851301397, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
       propertyPath: m_Name
       value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7215974691668103421, guid: 3f722c68f5bfdbd44bc9d0e2836c4625, type: 3}
-      propertyPath: m_Volume
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

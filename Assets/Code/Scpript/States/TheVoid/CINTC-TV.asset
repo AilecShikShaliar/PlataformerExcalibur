@@ -17,5 +17,5 @@ MonoBehaviour:
 
     Agh... Me duele todo el cuerpo...'
   nextStates:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 229b366f6f214c84eae95b2c3702edee, type: 2}
   imagenState: {fileID: 21300000, guid: 57222513bfa22f2428314e89b4e2c38c, type: 3}
