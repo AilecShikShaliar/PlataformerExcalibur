@@ -3702,7 +3702,6 @@ GameObject:
   - component: {fileID: 1035630834}
   - component: {fileID: 1035630833}
   - component: {fileID: 1035630837}
-  - component: {fileID: 1035630836}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -3795,29 +3794,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1035630836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035630831}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b840f62f85108f14f99540ddd1f391e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogText: {fileID: 919853079}
-  portrait: {fileID: 2113260115}
-  dialogBox: {fileID: 1327208236}
-  dialogLines:
-  - 
-  - 
-  - 
-  - 
-  - 
-  currentLine: 0
-  spritesExprexions: []
 --- !u!114 &1035630837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4162,6 +4138,42 @@ PrefabInstance:
     - target: {fileID: 319938434101646805, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
       propertyPath: m_Name
       value: CheckPointController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654145617390125315, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654145617390125315, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815616152609036775, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Size.x
+      value: 2.72718
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815616152609036775, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Size.y
+      value: 2.72718
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815616152609036775, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.14283195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815616152609036775, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5461487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532567133373381169, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263696376843907567, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1443979582, guid: fae83eb9935114e4ca68e486dbb0c2c6, type: 3}
+    - target: {fileID: 7263696376843907567, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8130361581531076768, guid: 54f6e1a970e0b9c4da37a6078a77bc08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8644,17 +8656,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2113260115 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3112052385458248776, guid: f57619d741f081446a35d11ebbb77486, type: 3}
-  m_PrefabInstance: {fileID: 3949091055151018436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752125859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2131897385
 GameObject:
   m_ObjectHideFlags: 0

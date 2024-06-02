@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3449740576777019465}
   - component: {fileID: 7960426364608325662}
+  - component: {fileID: 4595055322927627564}
   m_Layer: 0
   m_Name: TimeLineGO
   m_TagString: Untagged
@@ -42,12 +43,29 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 1009010151243458285, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -3213170193944979104, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - e02dd53872cc17b4598c644147a247ce: {fileID: 0}
+--- !u!114 &4595055322927627564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171227223825440381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73678eb9c99a6524bb2b48633b2f9553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 7960426364608325662}
+  DesactiveDirector: 20

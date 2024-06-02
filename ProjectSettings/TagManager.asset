@@ -7,6 +7,8 @@ TagManager:
   - ground
   - plataforma
   - Ladder
+  - Ground
+  - Jaimito
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - ground
   - plataforma
   - BookLayer
-  - 
+  - Jaimito
   - 
   - 
   - 

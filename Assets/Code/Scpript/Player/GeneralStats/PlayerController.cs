@@ -139,6 +139,7 @@ public class PlayerController : MonoBehaviour
                     theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
                     AudioManager.audioReference.PlaySFX(4);
                 }
+                
 
             }
         }

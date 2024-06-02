@@ -20,6 +20,7 @@ public class CheckpointController : MonoBehaviour
         _checkpoints = GetComponentsInChildren<Checkpoint>();
        
        if (FindObjectOfType<PlayerController>()) spawnPoint = FindObjectOfType<PlayerController>().transform.position;
+        
         //pso inicial de l jugador por si no hemos guardado ningun cp
 
     }
@@ -50,6 +51,7 @@ public class CheckpointController : MonoBehaviour
     {
         //El punto de spawn del jugador ser? el del checkpoint activo que le pasemos
         spawnPoint = newSpawnPoint;
+       
     }
 
 }

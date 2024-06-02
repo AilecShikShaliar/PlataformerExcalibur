@@ -12,6 +12,7 @@ public class Checkpoint : MonoBehaviour
     //Refe a cpcontroller
     private CheckpointController _cReference;
 
+
     public Animator checkpointanim;
 
 
@@ -39,7 +40,7 @@ public class Checkpoint : MonoBehaviour
             _cReference.SetSpawnPoint(transform.position);
             
             checkpointanim.SetTrigger("CheckPoint");
-            AudioManager.audioReference.PlaySFX(1);
+            
             
         }
     }
