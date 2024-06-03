@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 using TMPro; 
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -43,10 +44,16 @@ public class Game : MonoBehaviour
             }
             else
             {
-                Debug.Log("Holinofunciona");
+                Debug.Log(stateRef.name);
+                if (stateRef.name == "2TV")
+                {
+                    SceneManager.LoadScene("Nexo");
+                }
                 ResetDialog();
                 paneldialog.SetActive(false);
                 FindObjectOfType<PlayerController>().canMove = true;
+                
+                
 
             }
 

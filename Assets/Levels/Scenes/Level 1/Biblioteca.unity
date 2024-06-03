@@ -955,6 +955,68 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &179940243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1321511462}
+    m_Modifications:
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 79.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648751619333292319, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+      propertyPath: m_Name
+      value: SD
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+--- !u!4 &179940244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1379265603175339959, guid: 653086c3afcce704ea7d380df526bf6f, type: 3}
+  m_PrefabInstance: {fileID: 179940243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &255068586 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 728047130614938015, guid: e0b85d9eb0291fa45b05d655f62e4475, type: 3}
@@ -1632,6 +1694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1786182677}
     m_Modifications:
+    - target: {fileID: 2200159535868441657, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+      propertyPath: changed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3302337990455000558, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
       propertyPath: _lifeBar
       value: 
@@ -4687,6 +4753,7 @@ Transform:
   - {fileID: 273905164}
   - {fileID: 1261013005}
   - {fileID: 1514180596}
+  - {fileID: 179940244}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1321838685
@@ -5993,6 +6060,18 @@ PrefabInstance:
     - target: {fileID: 788082729083747882, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: m_Name
       value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: sD
+      value: 
+      objectReference: {fileID: 179940244}
+    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: sI
+      value: 
+      objectReference: {fileID: 179940244}
+    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: whoScene
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2939568188085150946, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: MenuPausa

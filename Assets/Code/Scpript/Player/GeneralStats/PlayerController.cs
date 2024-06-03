@@ -50,8 +50,6 @@ public class PlayerController : MonoBehaviour
     public bool changed;
     //public Vector2 initialPosition;
 
-    public AudioSource pasos;
-    private bool HActivo;
 
     private void Awake()
     {
@@ -133,7 +131,7 @@ public class PlayerController : MonoBehaviour
             //BOTON DE SALTO
             if (Input.GetButtonDown("Jump"))
             {
-                Debug.Log("mierda");
+                
                 //si el jugador est� en el suelo
                 if (isGrounded)
                 {
@@ -145,17 +143,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         
-        if(Input.GetButtonDown("Horizontal"))
-        {
-            HActivo = true;
-            pasos.Play();
-
-        }
-        if(Input.GetButtonUp("Horizontal"))
-        {
-            HActivo = false;
-            pasos.Pause();
-        } 
+      
 
         Debug.Log("velocidad: " + (Input.GetAxisRaw("Horizontal") * moveSpeed));
 

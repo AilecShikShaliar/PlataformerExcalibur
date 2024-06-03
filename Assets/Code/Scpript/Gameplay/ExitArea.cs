@@ -12,6 +12,7 @@ public class Exitarea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            
             PlayerPrefs.SetString("areaTransitionNameV", areaTransitionName);
             SceneManager.LoadScene(sceneToLoad);
 

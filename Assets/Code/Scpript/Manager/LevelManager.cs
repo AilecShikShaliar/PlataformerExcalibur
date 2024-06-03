@@ -19,6 +19,15 @@ public class LevelManager : MonoBehaviour
     public int bookcollected;
 
     private CinematicIntro _cinematicIntro;
+
+    public int whoScene;
+
+    public int sceneOrigen;
+
+    public Transform sD;
+    
+    public Transform sI;
+
     
     
 
@@ -37,6 +46,22 @@ public class LevelManager : MonoBehaviour
         //_pHReference = GameObject.Find("Player").GetComponent<PlayerHealthController>();
          if (PlayerPrefs.HasKey("BookCollected"))
             bookcollected = PlayerPrefs.GetInt("BookCollected");
+
+         PlayerPrefs.GetInt ("sceneOrigen", sceneOrigen);
+         if (sceneOrigen > whoScene)
+         {
+            _pCReference.transform.position = sD.position;
+
+
+         }
+         else if (sceneOrigen < whoScene)
+         {
+            _pCReference.transform.position = sI.position;
+         }
+         PlayerPrefs.SetInt("sceneOrigen", whoScene);
+
+
+
         
       
     

@@ -10,7 +10,7 @@ public class CinematicIntro : MonoBehaviour
 
     public GameObject dialogue;
 
-    public int Csi = 0;
+    public int Csi;
 
     public static CinematicIntro instance;
 
@@ -27,6 +27,9 @@ public class CinematicIntro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       if (PlayerPrefs.HasKey("Csi"))
+       Csi = PlayerPrefs.GetInt("Csi");
+     
    
     }
 
@@ -37,9 +40,11 @@ public class CinematicIntro : MonoBehaviour
         {
             playableDirector.Play();
             PlayerController.instance.canMove = false;
+            StartCoroutine(Disable());
             Cinematicant();
-           StartCoroutine(Disable());
+            
         }
+  
         
     }
      private IEnumerator Disable()
@@ -48,10 +53,14 @@ public class CinematicIntro : MonoBehaviour
      gameObject.SetActive(false);
       PlayerController.instance.canMove = true; 
       dialogue.SetActive(true);
+      Csi = 0; 
    }
    public void Cinematicant()
     {
        
+       // PlayerPrefs.SetInt("Csi", 0);
         PlayerPrefs.SetInt("Csi", 1);
     }
+   
+
 }

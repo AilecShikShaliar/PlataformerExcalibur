@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlataformSwicht : MonoBehaviour
 {
-      [SerializeField] BoxCollider2D Plataforma;
+      [SerializeField] EdgeCollider2D Plataforma;
       [SerializeField] SpriteRenderer SpritePlataforma;
 
       public bool desactivar = false;

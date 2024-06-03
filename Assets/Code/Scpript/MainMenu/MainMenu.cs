@@ -71,6 +71,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("BookCollected", 0);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(Scene);
+        PlayerPrefs.SetInt("Csi", 0);
         
 
     }

@@ -8,12 +8,16 @@ public class EntranceArea : MonoBehaviour
     public string transitionName, savedTransitionName;
     public float dirX;
 
+
     PlayerController _pM;
     // Start is called before the first frame update
     void Start()
     {
 
         _pM = GameObject.Find("Player").GetComponent<PlayerController>();
+
+       
+
 
         if (PlayerPrefs.HasKey("areaTransitionNameV"))
             savedTransitionName = PlayerPrefs.GetString("areaTransitionNameV");
@@ -27,5 +31,6 @@ public class EntranceArea : MonoBehaviour
 
             _pM.InitializeNoInput();
         }
+        
     }
 }
