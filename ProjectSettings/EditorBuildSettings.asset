@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/Menu/Nexo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Levels/Scenes/Menu/Nexo 1.unity
+    guid: f99bc581fa99520408570a0e12cf6742
+  - enabled: 1
     path: Assets/Levels/Scenes/Level 1/Entrada.unity
     guid: e876b46b9bfb5004d8c9e53469a60f18
   - enabled: 1
@@ -41,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Scenes/LiminalSpace/TheVoid/TV- 1.unity
     guid: 7dc4762d3ae9dbf40bfd64dee1f491e1
+  - enabled: 1
+    path: Assets/Levels/Scenes/LiminalSpace/LiminalSpace.unity
+    guid: 442e33c0d3b26b846a666fc4ceaa9a56
   m_configObjects: {}

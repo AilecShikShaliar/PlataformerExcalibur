@@ -131,15 +131,13 @@ public class PlayerController : MonoBehaviour
             //BOTON DE SALTO
             if (Input.GetButtonDown("Jump"))
             {
-                
+                Debug.Log("DEJA DE SALTAR");
                 //si el jugador est� en el suelo
                 if (isGrounded)
                 {
                     theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
                     AudioManager.audioReference.PlaySFX(4);
                 }
-                
-
             }
         }
         

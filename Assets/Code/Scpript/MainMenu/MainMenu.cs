@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour
         
         if (currentPoint == 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(ExitLevelCo(10));
+            StartCoroutine(ExitLevelCo(11));
             AudioManager.audioReference.PlaySFX(1);
         }
         if (currentPoint == 2 && Input.GetKeyDown(KeyCode.Space))

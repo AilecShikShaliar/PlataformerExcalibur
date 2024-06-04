@@ -28,7 +28,7 @@ public class puertainterect : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && _canopendoor && _iHaveKey)
         {
             puertaanim.SetTrigger("openDoor");
-            LoadLevel(1);
+            LoadLevel(13);
         }
     }
 

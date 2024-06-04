@@ -14,6 +14,7 @@ public class PuertaCursor : MonoBehaviour
     private PuertaMenu _puertaM;
 
     public Puerta _puertaYah;
+    
 
     public int scene;
 
@@ -78,6 +79,7 @@ public class PuertaCursor : MonoBehaviour
     private void CargarEscena()
     {
         _puertaYah.LoadLevel(scene);
+        
     }
 
     }

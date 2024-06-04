@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34703940a8bc55e4f8f470840661d4a4, type: 3}
   m_Name: CINTC-TV 1
   m_EditorClassIdentifier: 
-  storyText: "Valdeon:\n\n\xBFEh?..."
+  storyText: "VALDEON:\n\xBFEh?..."
   nextStates:
   - {fileID: 11400000, guid: b1be46fa2e7ffa74e94c51b20897edf8, type: 2}
   imagenState: {fileID: 21300000, guid: 57222513bfa22f2428314e89b4e2c38c, type: 3}

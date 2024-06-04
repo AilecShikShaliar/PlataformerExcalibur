@@ -20,7 +20,7 @@ public class KeyManager : MonoBehaviour
 
     public void UptadeKeyState()
     {
-        if (_lMReference.bookcollected >= 5)
+        if (_lMReference.bookcollected >= 6)
         {
             keyobj.SetActive(true);
         }

@@ -1751,6 +1751,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+--- !u!114 &510882694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5634494284382611024, guid: 41b828144762ed64cba1ebb220d096dc, type: 3}
+  m_PrefabInstance: {fileID: 510882693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f80df78c4e8d74cb58ab815ef76250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &550276634 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8174500556089747962, guid: d0f9a2408732b6c4da7b5fdeb07e5c48, type: 3}
@@ -2517,7 +2528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: Scene
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: infoPanel
@@ -2601,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: Scene
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: pasillo
@@ -2798,7 +2809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: Scene
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: infoPanel
@@ -3796,7 +3807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5133123464964172296, guid: 288a66a796402e5418b4b54dee71131a, type: 3}
       propertyPath: scene
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5133123464964172296, guid: 288a66a796402e5418b4b54dee71131a, type: 3}
       propertyPath: _puertaYah
@@ -5447,7 +5458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: Scene
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: infoPanel
@@ -6073,10 +6084,22 @@ PrefabInstance:
       propertyPath: whoScene
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2845234310942060076, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: levelToLoad
+      value: SaladeLectura
+      objectReference: {fileID: 0}
     - target: {fileID: 2939568188085150946, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: MenuPausa
       value: 
       objectReference: {fileID: 1658810679}
+    - target: {fileID: 3876065628232060553, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: _pCref
+      value: 
+      objectReference: {fileID: 510882694}
+    - target: {fileID: 3876065628232060553, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
+      propertyPath: MenuPuerta
+      value: 
+      objectReference: {fileID: 1269932761}
     - target: {fileID: 4563787232427593122, guid: 7b3e935d31d1df948b6d1042e1c6a0c6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7120,7 +7143,7 @@ PrefabInstance:
       objectReference: {fileID: 621335667}
     - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
       propertyPath: LevelToLoad
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6616314522545204869, guid: 2195fb56bb4748740933c13c5fe397d7, type: 3}
       propertyPath: transitionName
@@ -7699,6 +7722,10 @@ PrefabInstance:
     - target: {fileID: 6994153481904122404, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
+      propertyPath: Scene
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8220146151227559747, guid: 9df341bc91de5cb49ad6089230e8c9f9, type: 3}
       propertyPath: infoPanel

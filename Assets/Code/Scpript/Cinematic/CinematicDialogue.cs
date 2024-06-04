@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class CinematicDialogue : MonoBehaviour
 {
+    [SerializeField] BoxCollider2D Dialogo;
     public State stateNew;
     private Game _gameState;
 
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collider)
     {
-        _gameState = GameObject.Find("Canvas").GetComponent<Game>();
-        _gameState.paneldialog.SetActive(true);
-        CallLoadState();
-        FindObjectOfType<PlayerController>().canMove = false;
+       
+             _gameState = GameObject.Find("Canvas").GetComponent<Game>();
+           _gameState.paneldialog.SetActive(true);
+            CallLoadState();
+            FindObjectOfType<PlayerController>().canMove = false;
+            Dialogo.enabled = false;
+  
     }
 
     // Update is called once per frame

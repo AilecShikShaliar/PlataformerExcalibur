@@ -33,7 +33,7 @@ public class Game : MonoBehaviour
         
         State[] nextStates = stateRef.GetNextStates();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
 
             if(nextStates.Length > 0)
@@ -47,7 +47,7 @@ public class Game : MonoBehaviour
                 Debug.Log(stateRef.name);
                 if (stateRef.name == "2TV")
                 {
-                    SceneManager.LoadScene("Nexo");
+                    SceneManager.LoadScene("Nexo 1");
                 }
                 ResetDialog();
                 paneldialog.SetActive(false);

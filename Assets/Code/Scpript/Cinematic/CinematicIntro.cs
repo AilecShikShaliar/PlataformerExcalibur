@@ -42,8 +42,9 @@ public class CinematicIntro : MonoBehaviour
             PlayerController.instance.canMove = false;
             StartCoroutine(Disable());
             Cinematicant();
-            
+            Debug.Log("ea");            
         }
+        
   
         
     }

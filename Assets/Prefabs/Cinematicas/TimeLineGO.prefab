@@ -52,6 +52,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -3213170193944979104, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -886794054122597280, guid: d5f59179bb05e3342a9505f1040b3eca, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - e02dd53872cc17b4598c644147a247ce: {fileID: 0}
@@ -69,3 +71,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 7960426364608325662}
   DesactiveDirector: 20
+  dialogue: {fileID: 0}
+  Csi: 0

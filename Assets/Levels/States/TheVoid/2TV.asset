@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "\xBF?:\n\n..."
   nextStates: []
-  imagenState: {fileID: 21300000, guid: 5fd00cfa23cd7ce4fb084a2a8aa3345e, type: 3}
+  imagenState: {fileID: 21300000, guid: 296ef1214a9b7f74cb289f0c6eb9677e, type: 3}
