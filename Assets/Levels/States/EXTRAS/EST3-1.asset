@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "ZAREK:\nCreo que podr\xEDamos acceder desde aqu\xED."
   nextStates:
   - {fileID: 11400000, guid: 82e62133646eefc4cb88a89dc8ad87e6, type: 2}
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: 296db96c9afa3074a85fc9aa70dd2eee, type: 3}

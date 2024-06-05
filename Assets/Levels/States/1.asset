@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34703940a8bc55e4f8f470840661d4a4, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  storyText: sfsfsfsfsfsfs
-  nextStates: []
-  imagenState: {fileID: 21300000, guid: bc0ca44320a8076458f40b564cc02d20, type: 3}
+  storyText: "VALDEON:\n\xBFQui\xE9n es \xE9l?"
+  nextStates:
+  - {fileID: 11400000, guid: 3464ea4f298b42f4ba3211258a1c5552, type: 2}
+  imagenState: {fileID: 21300000, guid: 76ea7c4d05fe12d45b0de316613911f9, type: 3}

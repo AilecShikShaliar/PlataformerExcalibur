@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "ZAREK:\nNo siempre van a ser perfectas.\n "
   nextStates: []
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: 04bda5de4d3fa57429d4afa6236de6b3, type: 3}

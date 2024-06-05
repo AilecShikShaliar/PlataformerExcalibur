@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "ZAREK:\nTu debes ser Valdeon, \xBFcierto?"
   nextStates:
   - {fileID: 11400000, guid: 2f50a3cdabffced4bbd3370029aee56a, type: 2}
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: 296db96c9afa3074a85fc9aa70dd2eee, type: 3}

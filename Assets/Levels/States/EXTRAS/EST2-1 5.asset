@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "VALDEON:\n\xBFCu\xE1nto tiempor llevas aqu\xED?\n "
   nextStates:
   - {fileID: 11400000, guid: 6520e7ba34e4a3c4387ca6286254e0af, type: 2}
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: 76ea7c4d05fe12d45b0de316613911f9, type: 3}

@@ -19,4 +19,4 @@ MonoBehaviour:
     Ahora no siento nada.'
   nextStates:
   - {fileID: 11400000, guid: d64492f1c1a3e5744b33c415e37bae77, type: 2}
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: 4af043b72550fad41a0b067f35a31ca9, type: 3}

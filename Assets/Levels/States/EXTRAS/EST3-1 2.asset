@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "VALDEON:\n\xBFY si damos una vuelta por la zona?\n"
   nextStates: []
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: 4af043b72550fad41a0b067f35a31ca9, type: 3}

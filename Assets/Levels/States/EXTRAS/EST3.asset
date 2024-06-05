@@ -16,4 +16,4 @@ MonoBehaviour:
 
     Ese carro creo que nos puede servir.'
   nextStates: []
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: aff48f1fabbe5fb48a7b22c9b71c5305, type: 3}

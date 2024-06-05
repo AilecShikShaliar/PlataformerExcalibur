@@ -171,13 +171,13 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 60
-  m_fontSizeMax: 60
+  m_fontSizeMin: 50
+  m_fontSizeMax: 52
   m_fontStyle: 0
-  m_HorizontalAlignment: 32
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -3.03
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

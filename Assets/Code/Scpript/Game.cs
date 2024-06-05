@@ -45,9 +45,13 @@ public class Game : MonoBehaviour
             else
             {
                 Debug.Log(stateRef.name);
-                if (stateRef.name == "2TV")
+                if (stateRef.name == "TV23")
                 {
                     SceneManager.LoadScene("Nexo 1");
+                }
+                if (stateRef.name == "Final 30")
+                {
+                    SceneManager.LoadScene("MainMenu");
                 }
                 ResetDialog();
                 paneldialog.SetActive(false);

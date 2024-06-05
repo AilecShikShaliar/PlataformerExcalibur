@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34703940a8bc55e4f8f470840661d4a4, type: 3}
   m_Name: 1TV
   m_EditorClassIdentifier: 
-  storyText: 'Valdeon:
-
+  storyText: 'VALDEON:
 
     !!!'
   nextStates:

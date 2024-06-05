@@ -9,6 +9,8 @@ public class DialogActivator : MonoBehaviour
     //Para saber si el di�logo se puede activar o no
     private bool canActivate;
     private Game _gameState;
+
+    public GameObject infoPanel;
     
 
     // Start is called before the first frame update
@@ -42,6 +44,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
             canActivate = true;
+            infoPanel.SetActive(true);
 
     }
 
@@ -50,6 +53,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
             canActivate = false;
+            infoPanel.SetActive(false);
     }
 
     public void CallLoadState()

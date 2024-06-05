@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "ZAREK:\n Poco menos que tu."
   nextStates:
   - {fileID: 11400000, guid: 025dcb097bdafc44daa83d4e8057152e, type: 2}
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: c65115ed37e24c946a9e5a718367ed8d, type: 3}

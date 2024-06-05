@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34703940a8bc55e4f8f470840661d4a4, type: 3}
+  m_Name: TV3
+  m_EditorClassIdentifier: 
+  storyText: "\xBF?:\nPor fin has aparecido..."
+  nextStates:
+  - {fileID: 11400000, guid: dcff9f437cd3739469eb2155af69701d, type: 2}
+  imagenState: {fileID: 21300000, guid: 296ef1214a9b7f74cb289f0c6eb9677e, type: 3}

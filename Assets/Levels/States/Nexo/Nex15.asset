@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "VALDEON:\n\xBFPor qu\xE9 dices eso?"
   nextStates:
   - {fileID: 11400000, guid: 8aeb04906f1a1d945a0456c6f23d59d1, type: 2}
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: 76ea7c4d05fe12d45b0de316613911f9, type: 3}

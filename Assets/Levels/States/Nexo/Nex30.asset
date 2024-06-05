@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "VALDEON:\nPues mira tu por d\xF3nde, \nSe me ha pasado, jajaja..."
   nextStates: []
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: ac516d5408e0d9749b9f53d84098d9e4, type: 3}

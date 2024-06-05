@@ -16,4 +16,4 @@ MonoBehaviour:
 
     Pos si.'
   nextStates: []
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: ccf199686a6587d4aa3c3a7fb74d4bb5, type: 3}

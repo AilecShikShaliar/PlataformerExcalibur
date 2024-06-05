@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "ZAREK:\nCuando volv\xED ya lo hab\xEDan\ndestripado. Una pena..."
   nextStates:
   - {fileID: 11400000, guid: 6944dc7c842d3c8419520f755c65a822, type: 2}
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: 04bda5de4d3fa57429d4afa6236de6b3, type: 3}

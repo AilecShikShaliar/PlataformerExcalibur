@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "VALDEON:\n\xBFEres una persona de carne y hueso?"
   nextStates:
   - {fileID: 11400000, guid: a4d7b1201279e01429fccc6edd346328, type: 2}
-  imagenState: {fileID: 21300000, guid: 5ece6ca8b17884f42a8354bb9ea1971b, type: 3}
+  imagenState: {fileID: 21300000, guid: c8fec2fb13650b442be814cf8c375a2e, type: 3}

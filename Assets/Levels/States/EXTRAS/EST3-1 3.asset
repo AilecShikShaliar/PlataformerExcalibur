@@ -15,4 +15,4 @@ MonoBehaviour:
   storyText: "VALDEON:\nAl final tuve raz\xF3n."
   nextStates:
   - {fileID: 11400000, guid: 01e9b52d162704c41a1528f8b0fe0256, type: 2}
-  imagenState: {fileID: 0}
+  imagenState: {fileID: 21300000, guid: 560e18cc4e938de43b77da4f680d9a52, type: 3}

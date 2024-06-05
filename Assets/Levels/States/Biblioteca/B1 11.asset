@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34703940a8bc55e4f8f470840661d4a4, type: 3}
+  m_Name: B1 11
+  m_EditorClassIdentifier: 
+  storyText: "VALDEON:\n\xBF?"
+  nextStates:
+  - {fileID: 11400000, guid: 381ca0c4732f0c9468b1d2ee3aaf96e9, type: 2}
+  imagenState: {fileID: 21300000, guid: aff48f1fabbe5fb48a7b22c9b71c5305, type: 3}
